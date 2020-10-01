@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import gender_guesser.detector as gender
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 image = Image.open('books.jpg')
 st.image(image, use_column_width=True)
