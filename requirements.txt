@@ -4,5 +4,5 @@ streamlit
 numpy
 pandas
 xmltodict
-urllib
+urllib3
 seaborn
