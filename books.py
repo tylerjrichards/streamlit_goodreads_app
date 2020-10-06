@@ -200,7 +200,7 @@ with row6_2:
     plt.xlabel('Year')
     plt.ylabel('Percentage')
     st.pyplot()
-    st.markdown('Here you can see the gender distribution over time to see how your reading habits may have changed.')
+    st.markdown("Here you can see the gender distribution over time to see how your reading habits may have changed. Want to read more books written by women? [Here](https://www.penguin.co.uk/articles/2019/mar/best-books-by-female-authors.html) is a great list from Penguin that should be a good start (I'm trying to do better at this myself!).")
 
 
 row7_spacer1, row7_1, row7_spacer2 = st.beta_columns((.1,3.2,.1))
