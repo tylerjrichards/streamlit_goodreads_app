@@ -208,7 +208,7 @@ row7_spacer1, row7_1, row7_spacer2 = st.beta_columns((.1,3.2,.1))
 with row7_1:
     st.write('')
     st.write('')
-    st.header("Book List Recommendation for **{}**".format(user_name))
+    st.header("**Book List Recommendation for {}**".format(user_name))
 
     reco_df = pd.read_csv('recommendations_df.csv')
     unique_list_books = df['book.title'].unique()
