@@ -100,7 +100,6 @@ with row3_2:
     st.markdown("Looks like the average publication date is around **{}**, with your oldest book being **{}** and your youngest being **{}**.".format(avg_book_year, oldest_book, youngest_book))
     st.markdown("Note that the pubication date on Goodreads is the **last** publication date, so the data is altered for any book that has been republished by a publisher.")
 
-    compare_age = st.beta_expander("Compare with average Goodreads distribution 👉")
 
 row4_space1, row4_1, row4_space2, row4_2, row4_space3 = st.beta_columns((.1,1,.1,1,.1))
 
