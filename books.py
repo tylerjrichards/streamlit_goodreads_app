@@ -74,6 +74,7 @@ row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.beta_columns((.1,1,.1
 
 with row3_1:
     year_df = pd.DataFrame(df['read_at_year'].value_counts()).reset_index()
+    year_df = year_df.sort_values(by = 'index')
     sns.barplot(x = year_df['index'], y = year_df['read_at_year'], color='goldenrod')
     plt.xlabel('Year')
     plt.ylabel('Books Read')
@@ -89,6 +90,7 @@ with row3_2:
     # st.markdown("This next graph starts with the distribution of publication date for your read books. I've always wanted to try and read books that stand the test of time, and this graph let's me see how I do on that axis.")
     sns.distplot(pd.to_numeric(df['book.publication_year'], errors='coerce').dropna().astype(np.int64), kde_kws={'clip': (0.0, 2020)})
     plt.xlabel('Book Publication Year')
+    plt.ylabel('Density')
     st.pyplot()
 
     avg_book_year = str(int(np.mean(pd.to_numeric(df['book.publication_year']))))
@@ -129,6 +131,7 @@ with row4_2:
     st.subheader("How do Goodreads Users Rate Your Reads?")
     sns.distplot(pd.to_numeric(df['book.average_rating'], errors='coerce').dropna(), kde_kws={'clip': (0.0, 5.0)})
     plt.xlabel('Goodreads Book Ratings')
+   	plt.ylabel('Density')
     st.pyplot()
     st.markdown("Here is the distribution of average rating by other Goodreads users for the books that you've read. Note that this is a distribution of averages, which explains the lack of extreme values!")
     st.write('')
@@ -144,6 +147,7 @@ with row5_1:
     st.subheader('Book Length Distribution')
     sns.distplot(pd.to_numeric(df['book.num_pages'].dropna()))
     plt.xlabel('Number of Pages')
+    plt.ylabel('Density')
     st.pyplot()
 
     book_len_avg = round(np.mean(pd.to_numeric(df['book.num_pages'].dropna())))
@@ -160,6 +164,7 @@ with row5_2:
 	df['days_to_complete'] = (pd.to_datetime(df['read_at']) - pd.to_datetime(df['started_at'])).dt.days
 	sns.distplot(pd.to_numeric(df['days_to_complete'].dropna()))
 	plt.xlabel('Days')
+    plt.ylabel('Density')
 	st.pyplot()
 	time_len_avg = round(np.mean(pd.to_numeric(df['days_to_complete'].dropna())))
 	st.markdown("On average, it takes you **{} days** between you putting on Goodreads that you're reading a title, and you getting through it! Now let's move on to a gender breakdown of your authors.".format(time_len_avg))
