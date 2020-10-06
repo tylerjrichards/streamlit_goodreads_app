@@ -131,7 +131,7 @@ with row4_2:
     st.subheader("How do Goodreads Users Rate Your Reads?")
     sns.distplot(pd.to_numeric(df['book.average_rating'], errors='coerce').dropna(), kde_kws={'clip': (0.0, 5.0)})
     plt.xlabel('Goodreads Book Ratings')
-   	plt.ylabel('Density')
+    plt.ylabel('Density')
     st.pyplot()
     st.markdown("Here is the distribution of average rating by other Goodreads users for the books that you've read. Note that this is a distribution of averages, which explains the lack of extreme values!")
     st.write('')
@@ -164,7 +164,7 @@ with row5_2:
 	df['days_to_complete'] = (pd.to_datetime(df['read_at']) - pd.to_datetime(df['started_at'])).dt.days
 	sns.distplot(pd.to_numeric(df['days_to_complete'].dropna()))
 	plt.xlabel('Days')
-    plt.ylabel('Density')
+	plt.ylabel('Density')
 	st.pyplot()
 	time_len_avg = round(np.mean(pd.to_numeric(df['days_to_complete'].dropna())))
 	st.markdown("On average, it takes you **{} days** between you putting on Goodreads that you're reading a title, and you getting through it! Now let's move on to a gender breakdown of your authors.".format(time_len_avg))
