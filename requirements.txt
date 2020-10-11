@@ -1,6 +1,6 @@
 gender_guesser
 matplotlib
-streamlit-nightly >= 0.67.1.dev20200921-nightly
+streamlit-0.68.0-py2.py3-none-any.whl
 numpy
 pandas
 xmltodict
