@@ -1,3 +1,3 @@
-# book_reco
+# Goodreads Streamlit App
 
-testing my book recommendation
+Here lies my Streamlit Goodreads app! Check it out [here](tylerjrichards.com/book_reco.html)
