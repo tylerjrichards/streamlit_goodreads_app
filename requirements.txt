@@ -5,4 +5,4 @@ numpy
 pandas
 xmltodict
 urllib3
-seaborn
+seaborn==0.11.0
