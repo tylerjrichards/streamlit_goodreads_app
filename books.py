@@ -16,7 +16,7 @@ matplotlib.use("agg")
 _lock = RendererAgg.lock
 
 
-st.beta_set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.beta_columns(
     (.1, 2, .2, 1, .1))
