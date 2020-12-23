@@ -1,6 +1,6 @@
 gender-guesser==0.4.0
 matplotlib
-streamlit-0.68.0-py2.py3-none-any.whl
+streamlit
 numpy==1.18.5
 pandas
 xmltodict
