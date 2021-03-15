@@ -6,3 +6,4 @@ pandas
 xmltodict
 urllib3
 seaborn==0.11.0
+streamlit-lottie

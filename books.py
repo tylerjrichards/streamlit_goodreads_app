@@ -10,14 +10,27 @@ import matplotlib
 from matplotlib.figure import Figure
 from PIL import Image
 import gender_guesser.detector as gender
+from streamlit_lottie import st_lottie
+import requests
+
+st.set_page_config(layout="wide")
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_book = load_lottieurl('https://assets4.lottiefiles.com/temp/lf20_aKAfIn.json')
+st_lottie(lottie_book, speed=1, height=200, key="initial")
+
 
 matplotlib.use("agg")
 
 _lock = RendererAgg.lock
 
 
-st.set_page_config(layout="wide")
-
+sns.set_style('darkgrid')
 row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.beta_columns(
     (.1, 2, .2, 1, .1))
 
