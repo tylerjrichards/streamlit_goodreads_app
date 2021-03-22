@@ -1,4 +1,4 @@
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/tylerjrichards/book_reco/books.py)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](http://www.tylerjrichards.com/books_reco.html)
 
 # Goodreads Streamlit App
 
