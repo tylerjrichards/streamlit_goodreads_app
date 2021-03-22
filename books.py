@@ -172,10 +172,10 @@ with row4_1, _lock:
 
     if difference > 0:
         st.markdown("It looks like on average you rate books **lower** than the average Goodreads user, **by about {} points**. You differed from the crowd most on the book {} where you rated the book {} stars while the general readership rated the book {}".format(
-            round(difference, 3), title_diff, rating_diff, pop_rating_diff))
+            abs(round(difference, 3)), title_diff, rating_diff, pop_rating_diff))
     else:
         st.markdown("It looks like on average you rate books **higher** than the average Goodreads user, **by about {} points**. You differed from the crowd most on the book {} where you rated the book {} stars while the general readership rated the book {}".format(
-            round(difference, 3), title_diff, rating_diff, pop_rating_diff))
+            abs(round(difference, 3)), title_diff, rating_diff, pop_rating_diff))
 
 with row4_2, _lock:
     st.subheader("How do Goodreads Users Rate Your Reads?")
