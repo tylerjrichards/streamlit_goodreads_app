@@ -31,7 +31,7 @@ _lock = RendererAgg.lock
 
 
 sns.set_style('darkgrid')
-row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.beta_columns(
+row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns(
     (.1, 2, .2, 1, .1))
 
 row0_1.title('Analyzing Your Goodreads Reading Habits')
@@ -42,21 +42,21 @@ with row0_2:
 row0_2.subheader(
     'A Web App by [Tyler Richards](http://www.tylerjrichards.com)')
 
-row1_spacer1, row1_1, row1_spacer2 = st.beta_columns((.1, 3.2, .1))
+row1_spacer1, row1_1, row1_spacer2 = st.columns((.1, 3.2, .1))
 
 with row1_1:
     st.markdown("Hey there! Welcome to Tyler's Goodreads Analysis App. This app scrapes (and never keeps or stores!) the books you've read and analyzes data about your book list, including estimating the gender breakdown of the authors, and looking at the distribution of the age and length of book you read. After some nice graphs, it tries to recommend a curated book list to you from a famous public reader, like Barack Obama or Bill Gates. One last tip, if you're on a mobile device, switch over to landscape for viewing ease. Give it a go!")
     st.markdown(
         "**To begin, please enter the link to your [Goodreads profile](https://www.goodreads.com/) (or just use mine!).** 👇")
 
-row2_spacer1, row2_1, row2_spacer2 = st.beta_columns((.1, 3.2, .1))
+row2_spacer1, row2_1, row2_spacer2 = st.columns((.1, 3.2, .1))
 with row2_1:
     default_username = st.selectbox("Select one of our sample Goodreads profiles", (
         "89659767-tyler-richards", "7128368-amanda", "17864196-adrien-treuille"))
     st.markdown("**or**")
     user_input = st.text_input(
         "Input your own Goodreads Link (e.g. https://www.goodreads.com/user/show/89659767-tyler-richards)")
-    need_help = st.beta_expander('Need help? 👉')
+    need_help = st.expander('Need help? 👉')
     with need_help:
         st.markdown(
             "Having trouble finding your Goodreads profile? Head to the [Goodreads website](https://www.goodreads.com/) and click profile in the top right corner.")
@@ -81,7 +81,7 @@ user_input = str(user_input)
 contents = get_user_data(user_id=user_id, v='2', shelf='read', per_page='200')
 contents = xmltodict.parse(contents)
 
-line1_spacer1, line1_1, line1_spacer2 = st.beta_columns((.1, 3.2, .1))
+line1_spacer1, line1_1, line1_spacer2 = st.columns((.1, 3.2, .1))
 
 with line1_1:
     if int(contents['GoodreadsResponse']['reviews']['@total']) == 0:
@@ -97,7 +97,7 @@ df['read_at_year'] = [i[-4:] if i != None else i for i in df['read_at']]
 has_records = any(df['read_at_year'])
 
 st.write('')
-row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.beta_columns(
+row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
     (.1, 1, .1, 1, .1))
 
 
@@ -144,7 +144,7 @@ with row3_2, _lock:
     st.markdown("Note that the publication date on Goodreads is the **last** publication date, so the data is altered for any book that has been republished by a publisher.")
 
 st.write('')
-row4_space1, row4_1, row4_space2, row4_2, row4_space3 = st.beta_columns(
+row4_space1, row4_1, row4_space2, row4_2, row4_space3 = st.columns(
     (.1, 1, .1, 1, .1))
 
 with row4_1, _lock:
@@ -187,7 +187,7 @@ with row4_2, _lock:
     st.markdown("Here is the distribution of average rating by other Goodreads users for the books that you've read. Note that this is a distribution of averages, which explains the lack of extreme values!")
 
 st.write('')
-row5_space1, row5_1, row5_space2, row5_2, row5_space3 = st.beta_columns(
+row5_space1, row5_1, row5_space2, row5_2, row5_space3 = st.columns(
     (.1, 1, .1, 1, .1))
 
 with row5_1, _lock:
@@ -233,7 +233,7 @@ with row5_2, _lock:
 
 
 st.write('')
-row6_space1, row6_1, row6_space2, row6_2, row6_space3 = st.beta_columns(
+row6_space1, row6_1, row6_space2, row6_2, row6_space3 = st.columns(
     (.1, 1, .1, 1, .1))
 
 
@@ -285,7 +285,7 @@ with row6_2, _lock:
         "Want to read more books written by women? [Here](https://www.penguin.co.uk/articles/2019/mar/best-books-by-female-authors.html) is a great list from Penguin that should be a good start (I'm trying to do better at this myself!).")
 
 st.write('')
-row7_spacer1, row7_1, row7_spacer2 = st.beta_columns((.1, 3.2, .1))
+row7_spacer1, row7_1, row7_spacer2 = st.columns((.1, 3.2, .1))
 
 with row7_1:
     st.header("**Book List Recommendation for {}**".format(user_name))
