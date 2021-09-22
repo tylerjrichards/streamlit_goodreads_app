@@ -134,11 +134,9 @@ with row3_2, _lock:
 
     avg_book_year = str(
         int(np.mean(pd.to_numeric(df['book.publication_year']))))
-    row = df[df['book.publication_year'] == str(
-        pd.to_numeric(df['book.publication_year']).min())[0:4]]
+    row = df.sort_values(by='book.publication_year', ascending=False).head(1)
     oldest_book = row['book.title_without_series'].iloc[0]
-    row_young = df[df['book.publication_year'] == str(
-        pd.to_numeric(df['book.publication_year']).max())[0:4]]
+    row_young = df.sort_values(by='book.publication_year').head(1)
     youngest_book = row_young['book.title_without_series'].iloc[0]
 
     st.markdown("Looks like the average publication date is around **{}**, with your oldest book being **{}** and your youngest being **{}**.".format(
