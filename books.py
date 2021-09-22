@@ -36,11 +36,12 @@ row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns(
 
 row0_1.title('Analyzing Your Goodreads Reading Habits')
 
+
 with row0_2:
     st.write('')
 
 row0_2.subheader(
-    'A Web App by [Tyler Richards](http://www.tylerjrichards.com)')
+    'A Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), get my new book on Streamlit [here!](https://www.amazon.com/Getting-Started-Streamlit-Data-Science/dp/180056550X)')
 
 row1_spacer1, row1_1, row1_spacer2 = st.columns((.1, 3.2, .1))
 
