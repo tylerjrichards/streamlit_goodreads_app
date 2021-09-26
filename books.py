@@ -53,7 +53,7 @@ with row1_1:
 row2_spacer1, row2_1, row2_spacer2 = st.columns((.1, 3.2, .1))
 with row2_1:
     default_username = st.selectbox("Select one of our sample Goodreads profiles", (
-        "89659767-tyler-richards", "7128368-amanda", "17864196-adrien-treuille"))
+        "89659767-tyler-richards", "7128368-amanda", "17864196-adrien-treuille", "133664988-jordan-pierre"))
     st.markdown("**or**")
     user_input = st.text_input(
         "Input your own Goodreads Link (e.g. https://www.goodreads.com/user/show/89659767-tyler-richards)")
@@ -299,10 +299,8 @@ with row7_1:
     )).reset_index().sort_values(by='did_user_read', ascending=False).iloc[0][0]
     avg_in_common = pd.DataFrame(reco_df.groupby('recommender_name').mean(
     )).reset_index().sort_values(by='did_user_read', ascending=False).iloc[0][0]
-    most_recommended = pd.DataFrame(reco_df.groupby('recommender').sum(
-    )).reset_index().sort_values(by='did_user_read', ascending=False).iloc[0][0]
-    avg_recommended = pd.DataFrame(reco_df.groupby('recommender').mean(
-    )).reset_index().sort_values(by='did_user_read', ascending=False).iloc[0][0]
+    most_recommended = reco_df[reco_df['recommender_name'] == most_in_common]['recommender'].iloc[0]
+    avg_recommended = reco_df[reco_df['recommender_name'] == avg_in_common]['recommender'].iloc[0]
 
     def get_link(recommended):
         if '-' not in recommended:
@@ -310,7 +308,6 @@ with row7_1:
         elif '-' in recommended:
             link = 'https://www.mostrecommendedbooks.com/' + recommended + '-books'
         return(link)
-
     st.markdown('For one last bit of analysis, we scraped a few hundred book lists from famous thinkers in technology, media, and government (everyone from Barack and Michelle Obama to Keith Rabois and Naval Ravikant). We took your list of books read and tried to recommend one of their lists to book through based on information we gleaned from your list')
     st.markdown("You read the most books in common with **{}**, and your book list is the most similar on average to **{}**. Find their book lists [here]({}) and [here]({}) respectively.".format(
         most_in_common, avg_in_common, get_link(most_recommended), get_link(avg_recommended)))
