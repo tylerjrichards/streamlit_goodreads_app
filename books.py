@@ -215,17 +215,26 @@ row4_space1, row4_1, row4_space2, row4_2, row4_space3 = st.columns(
 
 with row4_1, _lock:
     st.subheader("How Do You Rate Your Reads?")
-    rating_df = pd.DataFrame(
-        pd.to_numeric(
-            df[df["rating"].isin(["1", "2", "3", "4", "5"])]["rating"]
-        ).value_counts(normalize=True)
-    ).reset_index()
-    fig = Figure()
-    ax = fig.subplots()
-    sns.barplot(x=rating_df["index"], y=rating_df["rating"], color="goldenrod", ax=ax)
-    ax.set_ylabel("Percentage")
-    ax.set_xlabel("Your Book Ratings")
-    st.pyplot(fig)
+    rating_df = pd.DataFrame(df[df["rating"].isin(["1", "2", "3", "4", "5"])])
+    st.write(rating_df)
+    rate_chart = (
+        (
+            alt.Chart(rating_df)
+            .mark_bar()
+            .encode(
+                alt.X(
+                    "rating:N",
+                    bin=alt.Bin(extent=[0, 5], step=1),
+                    title="Book Ratings",
+                ),
+                alt.Y("count()", title="Percentage"),
+                color=alt.value("#ADD8E6"),
+            )
+        )
+        .interactive()
+        .properties(height=700, width=500)
+    )
+    st.altair_chart(rate_chart, use_container_width=True)
 
     df["rating_diff"] = pd.to_numeric(df["book.average_rating"]) - pd.to_numeric(
         df[df["rating"].isin(["1", "2", "3", "4", "5"])]["rating"]
