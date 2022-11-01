@@ -14,7 +14,7 @@ from pandas import json_normalize
 from PIL import Image
 from streamlit_lottie import st_lottie
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Goodreads Analysis App", layout="wide")
 
 
 def load_lottieurl(url: str):
