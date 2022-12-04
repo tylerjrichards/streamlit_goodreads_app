@@ -139,7 +139,7 @@ with row3_1:
         title="Books Read by Year",
         color_discrete_sequence=["#9EE6CF"],
     )
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     st.markdown(
         "It looks like you've read a grand total of **{} books with {} authors,** with {} being your most read author! That's awesome. Here's what your reading habits look like since you've started using Goodreads.".format(
             u_books, u_authors, df["book.authors.author.name"].mode()[0]
@@ -162,7 +162,7 @@ with row3_2:
     )
     fig.update_xaxes(title_text="Publication Year")
     fig.update_yaxes(title_text="Count")
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
     avg_book_year = str(int(np.mean(pd.to_numeric(df["book.publication_year"]))))
     row_young = df.sort_values(by="book.publication_year", ascending=False).head(1)
@@ -202,7 +202,7 @@ with row4_1:
     )
     fig.update_xaxes(title_text="Rating")
     fig.update_yaxes(title_text="Percentage")
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     df["rating_diff"] = pd.to_numeric(df["book.average_rating"]) - pd.to_numeric(
         df[df["rating"].isin(["1", "2", "3", "4", "5"])]["rating"]
     )
@@ -236,7 +236,7 @@ with row4_2:
     )
     fig.update_xaxes(title_text="Average Rating")
     fig.update_yaxes(title_text="Count")
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     st.markdown(
         "Here is the distribution of average rating by other Goodreads users for the books that you've read. Note that this is a distribution of averages, which explains the lack of extreme values!"
     )
@@ -256,7 +256,7 @@ with row5_1:
     )
     fig.update_xaxes(title_text="Number of Pages")
     fig.update_yaxes(title_text="Count")
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
     book_len_avg = round(np.mean(pd.to_numeric(df["book.num_pages"].dropna())))
     book_len_max = pd.to_numeric(df["book.num_pages"]).max()
@@ -283,7 +283,7 @@ with row5_2:
     )
     fig.update_xaxes(title_text="Number of Days")
     fig.update_yaxes(title_text="Count")
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     days_to_complete = pd.to_numeric(df["days_to_complete"].dropna())
     time_len_avg = 0
     if len(days_to_complete):
@@ -321,7 +321,7 @@ with row6_1:
         title="Percentage of Books by Gender",
         color_discrete_sequence=["#9EE6CF"],
     )
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     st.markdown(
         "To get the gender breakdown of the books you have read, this next bit takes the first name of the authors and uses that to predict their gender. These algorithms are far from perfect, and tend to miss non-Western/non-English genders often so take this graph with a grain of salt."
     )
@@ -347,7 +347,7 @@ with row6_2:
         title="Percent of Books by Gender Over Time",
     )
     fig.update_xaxes(title_text="Year Read")
-    st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     st.markdown(
         "Here you can see the gender distribution over time to see how your reading habits may have changed."
     )
