@@ -1,4 +1,4 @@
 .envrc
 .direnv/
 .mypy_cache/
-.streamlit
+.streamlit/*
