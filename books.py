@@ -1,17 +1,14 @@
 import urllib.request
 
 import gender_guesser.detector as gender
-import matplotlib
 import numpy as np
 import pandas as pd
+import plotly.express as px
 import requests
-import seaborn as sns
 import streamlit as st
 import xmltodict
-from matplotlib.backends.backend_agg import RendererAgg
-from matplotlib.figure import Figure
 from pandas import json_normalize
-from PIL import Image
+from streamlit_extras.add_vertical_space import add_vertical_space
 from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Goodreads Analysis App", layout="wide")
@@ -27,13 +24,6 @@ def load_lottieurl(url: str):
 lottie_book = load_lottieurl("https://assets4.lottiefiles.com/temp/lf20_aKAfIn.json")
 st_lottie(lottie_book, speed=1, height=200, key="initial")
 
-
-matplotlib.use("agg")
-
-_lock = RendererAgg.lock
-
-
-sns.set_style("darkgrid")
 row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns(
     (0.1, 2, 0.2, 1, 0.1)
 )
@@ -42,7 +32,7 @@ row0_1.title("Analyzing Your Goodreads Reading Habits")
 
 
 with row0_2:
-    st.write("")
+    add_vertical_space()
 
 row0_2.subheader(
     "A Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), get my new book on Streamlit [here!](https://www.amazon.com/Getting-Started-Streamlit-Data-Science/dp/180056550X)"
@@ -84,12 +74,11 @@ with row2_1:
 
 user_id = "".join(filter(lambda i: i.isdigit(), user_input))
 user_name = user_input.split(user_id, 1)[1].split("-", 1)[1].replace("-", " ")
+gr_key = st.secrets["goodreads_key"]
 
 
 @st.cache
-def get_user_data(
-    user_id, key="ZRnySx6awjQuExO9tKEJXw", v="2", shelf="read", per_page="200"
-):
+def get_user_data(user_id, key=gr_key, v="2", shelf="read", per_page="200"):
     api_url_base = "https://www.goodreads.com/review/list/"
     final_url = (
         api_url_base
@@ -127,29 +116,30 @@ u_books = len(df["book.id.#text"].unique())
 u_authors = len(df["book.authors.author.id"].unique())
 df["read_at_year"] = [i[-4:] if i != None else i for i in df["read_at"]]
 has_records = any(df["read_at_year"])
+if has_records == False:
+    st.write(
+        "No books have been read in the past 5 years, so no analysis can be done. Try another profile!"
+    )
+    st.stop()
 
 st.write("")
 row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
     (0.1, 1, 0.1, 1, 0.1)
 )
 
-
-with row3_1, _lock:
+with row3_1:
     st.subheader("Books Read")
-    if has_records:
-        year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
-        year_df = year_df.sort_values(by="index")
-        fig = Figure()
-        ax = fig.subplots()
-        sns.barplot(
-            x=year_df["index"], y=year_df["read_at_year"], color="goldenrod", ax=ax
-        )
-        ax.set_xlabel("Year")
-        ax.set_ylabel("Books Read")
-        st.pyplot(fig)
-    else:
-        st.markdown("We do not have information to find out _when_ you read your books")
-
+    year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
+    year_df = year_df.sort_values(by="index")
+    year_df.columns = ["Year", "Count"]
+    fig = px.bar(
+        year_df,
+        x="Year",
+        y="Count",
+        title="Books Read by Year",
+        color_discrete_sequence=["#9EE6CF"],
+    )
+    st.plotly_chart(fig)
     st.markdown(
         "It looks like you've read a grand total of **{} books with {} authors,** with {} being your most read author! That's awesome. Here's what your reading habits look like since you've started using Goodreads.".format(
             u_books, u_authors, df["book.authors.author.name"].mode()[0]
@@ -157,21 +147,22 @@ with row3_1, _lock:
     )
 
 
-with row3_2, _lock:
+with row3_2:
     st.subheader("Book Age")
-    fig = Figure()
-    ax = fig.subplots()
-    sns.histplot(
-        pd.to_numeric(df["book.publication_year"], errors="coerce")
-        .dropna()
-        .astype(np.int64),
-        kde_kws={"clip": (0.0, 2020)},
-        ax=ax,
-        kde=True,
+    # plots a bar chart of the dataframe df by book.publication year by count in plotly. columns are publication year and count
+    age_df = pd.DataFrame(df["book.publication_year"].value_counts()).reset_index()
+    age_df = age_df.sort_values(by="index")
+    age_df.columns = ["publication_year", "count"]
+    fig = px.bar(
+        age_df,
+        x="publication_year",
+        y="count",
+        title="Books Read by Publication Year",
+        color_discrete_sequence=["#9EE6CF"],
     )
-    ax.set_xlabel("Book Publication Year")
-    ax.set_ylabel("Density")
-    st.pyplot(fig)
+    fig.update_xaxes(title_text="Publication Year")
+    fig.update_yaxes(title_text="Count")
+    st.plotly_chart(fig)
 
     avg_book_year = str(int(np.mean(pd.to_numeric(df["book.publication_year"]))))
     row_young = df.sort_values(by="book.publication_year", ascending=False).head(1)
@@ -188,25 +179,30 @@ with row3_2, _lock:
         "Note that the publication date on Goodreads is the **last** publication date, so the data is altered for any book that has been republished by a publisher."
     )
 
-st.write("")
+add_vertical_space()
 row4_space1, row4_1, row4_space2, row4_2, row4_space3 = st.columns(
     (0.1, 1, 0.1, 1, 0.1)
 )
 
-with row4_1, _lock:
+with row4_1:
     st.subheader("How Do You Rate Your Reads?")
     rating_df = pd.DataFrame(
         pd.to_numeric(
             df[df["rating"].isin(["1", "2", "3", "4", "5"])]["rating"]
         ).value_counts(normalize=True)
     ).reset_index()
-    fig = Figure()
-    ax = fig.subplots()
-    sns.barplot(x=rating_df["index"], y=rating_df["rating"], color="goldenrod", ax=ax)
-    ax.set_ylabel("Percentage")
-    ax.set_xlabel("Your Book Ratings")
-    st.pyplot(fig)
-
+    # add a barplot of rating_df by index and rating in plotly, y label is percentage, x label is rating
+    rating_df.columns = ["rating", "percentage"]
+    fig = px.bar(
+        rating_df,
+        x="rating",
+        y="percentage",
+        title="Percentage of Books by Rating",
+        color_discrete_sequence=["#9EE6CF"],
+    )
+    fig.update_xaxes(title_text="Rating")
+    fig.update_yaxes(title_text="Percentage")
+    st.plotly_chart(fig)
     df["rating_diff"] = pd.to_numeric(df["book.average_rating"]) - pd.to_numeric(
         df[df["rating"].isin(["1", "2", "3", "4", "5"])]["rating"]
     )
@@ -230,37 +226,37 @@ with row4_1, _lock:
             )
         )
 
-with row4_2, _lock:
+with row4_2:
     st.subheader("How do Goodreads Users Rate Your Reads?")
-    fig = Figure()
-    ax = fig.subplots()
-    sns.histplot(
-        pd.to_numeric(df["book.average_rating"], errors="coerce").dropna(),
-        kde_kws={"clip": (0.0, 5.0)},
-        ax=ax,
-        kde=True,
+    fig = px.histogram(
+        df,
+        x="book.average_rating",
+        title="Goodreads User Ratings",
+        color_discrete_sequence=["#9EE6CF"],
     )
-    ax.set_xlabel("Goodreads Book Ratings")
-    ax.set_ylabel("Density")
-    st.pyplot(fig)
+    fig.update_xaxes(title_text="Average Rating")
+    fig.update_yaxes(title_text="Count")
+    st.plotly_chart(fig)
     st.markdown(
         "Here is the distribution of average rating by other Goodreads users for the books that you've read. Note that this is a distribution of averages, which explains the lack of extreme values!"
     )
 
-st.write("")
+add_vertical_space()
 row5_space1, row5_1, row5_space2, row5_2, row5_space3 = st.columns(
     (0.1, 1, 0.1, 1, 0.1)
 )
 
-with row5_1, _lock:
-    # page breakdown
+with row5_1:
     st.subheader("Book Length Distribution")
-    fig = Figure()
-    ax = fig.subplots()
-    sns.histplot(pd.to_numeric(df["book.num_pages"].dropna()), ax=ax, kde=True)
-    ax.set_xlabel("Number of Pages")
-    ax.set_ylabel("Density")
-    st.pyplot(fig)
+    fig = px.histogram(
+        df,
+        x="book.num_pages",
+        title="Book Length Distribution",
+        color_discrete_sequence=["#9EE6CF"],
+    )
+    fig.update_xaxes(title_text="Number of Pages")
+    fig.update_yaxes(title_text="Count")
+    st.plotly_chart(fig)
 
     book_len_avg = round(np.mean(pd.to_numeric(df["book.num_pages"].dropna())))
     book_len_max = pd.to_numeric(df["book.num_pages"]).max()
@@ -274,46 +270,40 @@ with row5_1, _lock:
     )
 
 
-with row5_2, _lock:
-    # length of time until completion
+with row5_2:
     st.subheader("How Quickly Do You Read?")
-    if has_records:
-        df["days_to_complete"] = (
-            pd.to_datetime(df["read_at"]) - pd.to_datetime(df["started_at"])
-        ).dt.days
-        fig = Figure()
-        ax = fig.subplots()
-        sns.histplot(pd.to_numeric(df["days_to_complete"].dropna()), ax=ax, kde=True)
-        ax.set_xlabel("Days")
-        ax.set_ylabel("Density")
-        st.pyplot(fig)
-        days_to_complete = pd.to_numeric(df["days_to_complete"].dropna())
-        time_len_avg = 0
-        if len(days_to_complete):
-            time_len_avg = round(np.mean(days_to_complete))
-        st.markdown(
-            "On average, it takes you **{} days** between you putting on Goodreads that you're reading a title, and you getting through it! Now let's move on to a gender breakdown of your authors.".format(
-                time_len_avg
-            )
+    df["days_to_complete"] = (
+        pd.to_datetime(df["read_at"]) - pd.to_datetime(df["started_at"])
+    ).dt.days
+    fig = px.histogram(
+        df,
+        x="days_to_complete",
+        title="Days to Complete Distribution",
+        color_discrete_sequence=["#9EE6CF"],
+    )
+    fig.update_xaxes(title_text="Number of Days")
+    fig.update_yaxes(title_text="Count")
+    st.plotly_chart(fig)
+    days_to_complete = pd.to_numeric(df["days_to_complete"].dropna())
+    time_len_avg = 0
+    if len(days_to_complete):
+        time_len_avg = round(np.mean(days_to_complete))
+    st.markdown(
+        "On average, it takes you **{} days** between you putting on Goodreads that you're reading a title, and you getting through it! Now let's move on to a gender breakdown of your authors.".format(
+            time_len_avg
         )
-    else:
-        st.markdown(
-            "We do not have information to find out _when_ you finished reading your books"
-        )
+    )
 
-
-st.write("")
+add_vertical_space()
 row6_space1, row6_1, row6_space2, row6_2, row6_space3 = st.columns(
     (0.1, 1, 0.1, 1, 0.1)
 )
 
-
-with row6_1, _lock:
+with row6_1:
     st.subheader("Gender Breakdown")
     # gender algo
     d = gender.Detector()
     new = df["book.authors.author.name"].str.split(" ", n=1, expand=True)
-
     df["first_name"] = new[0]
     df["author_gender"] = df["first_name"].apply(d.get_gender)
     df.loc[df["author_gender"] == "mostly_male", "author_gender"] = "male"
@@ -322,17 +312,16 @@ with row6_1, _lock:
     author_gender_df = pd.DataFrame(
         df["author_gender"].value_counts(normalize=True)
     ).reset_index()
-    fig = Figure()
-    ax = fig.subplots()
-    sns.barplot(
-        x=author_gender_df["index"],
-        y=author_gender_df["author_gender"],
-        color="goldenrod",
-        ax=ax,
+    # plot bar plot of gender by percentage in plotly
+    author_gender_df.columns = ["Gender", "Percentage"]
+    fig = px.bar(
+        author_gender_df,
+        x="Gender",
+        y="Percentage",
+        title="Percentage of Books by Gender",
+        color_discrete_sequence=["#9EE6CF"],
     )
-    ax.set_ylabel("Percentage")
-    ax.set_xlabel("Gender")
-    st.pyplot(fig)
+    st.plotly_chart(fig)
     st.markdown(
         "To get the gender breakdown of the books you have read, this next bit takes the first name of the authors and uses that to predict their gender. These algorithms are far from perfect, and tend to miss non-Western/non-English genders often so take this graph with a grain of salt."
     )
@@ -340,42 +329,37 @@ with row6_1, _lock:
         "Note: the package I'm using for this prediction outputs 'andy', which stands for androgenous, whenever multiple genders are nearly equally likely (at some threshold of confidence). It is not, sadly, a prediction of a new gender called andy."
     )
 
-with row6_2, _lock:
+with row6_2:
     st.subheader("Gender Distribution Over Time")
-
-    if has_records:
-        year_author_df = pd.DataFrame(
-            df.groupby(["read_at_year"])["author_gender"].value_counts(normalize=True)
-        )
-        year_author_df.columns = ["Percentage"]
-        year_author_df.reset_index(inplace=True)
-        year_author_df = year_author_df[year_author_df["read_at_year"] != ""]
-        fig = Figure()
-        ax = fig.subplots()
-        sns.lineplot(
-            x=year_author_df["read_at_year"],
-            y=year_author_df["Percentage"],
-            hue=year_author_df["author_gender"],
-            ax=ax,
-        )
-        ax.set_xlabel("Year")
-        ax.set_ylabel("Percentage")
-        st.pyplot(fig)
-        st.markdown(
-            "Here you can see the gender distribution over time to see how your reading habits may have changed."
-        )
-    else:
-        st.markdown("We do not have information to find out _when_ you read your books")
+    year_author_df = pd.DataFrame(
+        df.groupby(["read_at_year"])["author_gender"].value_counts(normalize=True)
+    )
+    year_author_df.columns = ["Percentage"]
+    year_author_df.reset_index(inplace=True)
+    year_author_df = year_author_df[year_author_df["read_at_year"] != ""]
+    year_author_df["read_at_year"] = pd.to_datetime(year_author_df["read_at_year"])
+    # plot line plot in plotly of year_author_df with x axis as read_at_year, y axis is percentage, color is author gender
+    fig = px.line(
+        year_author_df,
+        x="read_at_year",
+        y="Percentage",
+        color="author_gender",
+        title="Percent of Books by Gender Over Time",
+    )
+    fig.update_xaxes(title_text="Year Read")
+    st.plotly_chart(fig)
+    st.markdown(
+        "Here you can see the gender distribution over time to see how your reading habits may have changed."
+    )
     st.markdown(
         "Want to read more books written by women? [Here](https://www.penguin.co.uk/articles/2019/mar/best-books-by-female-authors.html) is a great list from Penguin that should be a good start (I'm trying to do better at this myself!)."
     )
 
-st.write("")
+add_vertical_space()
 row7_spacer1, row7_1, row7_spacer2 = st.columns((0.1, 3.2, 0.1))
 
 with row7_1:
     st.header("**Book List Recommendation for {}**".format(user_name))
-
     reco_df = pd.read_csv("recommendations_df.csv")
     unique_list_books = df["book.title"].unique()
     reco_df["did_user_read"] = reco_df["goodreads_title"].isin(unique_list_books)
