@@ -72,6 +72,11 @@ with row2_1:
     if not user_input:
         user_input = f"https://www.goodreads.com/user/show/{default_username}"
 
+    st.warning(
+        """Goodreads deprecated their API in 2019, making these results often inaccurate.
+        If you see missing books from your profile, it is
+        probably because of the API! Sorry about that!"""
+    )
 user_id = "".join(filter(lambda i: i.isdigit(), user_input))
 user_name = user_input.split(user_id, 1)[1].split("-", 1)[1].replace("-", " ")
 gr_key = st.secrets["goodreads_key"]
