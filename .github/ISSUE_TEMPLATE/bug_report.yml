@@ -44,10 +44,3 @@ body:
       render: bash
     validations:
       required: false
-  - type: input
-    id: version
-    attributes:
-      label: "Streamlit Version"
-      description: What version of Streamlit are you running?
-    validations:
-      required: true
