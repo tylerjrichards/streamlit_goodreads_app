@@ -135,7 +135,7 @@ row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
 with row3_1:
     st.subheader("Books Read")
     year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
-    year_df = year_df.sort_values(by="index")
+    year_df = year_df.sort_index()
     year_df.columns = ["Year", "Count"]
     fig = px.bar(
         year_df,
@@ -156,7 +156,7 @@ with row3_2:
     st.subheader("Book Age")
     # plots a bar chart of the dataframe df by book.publication year by count in plotly. columns are publication year and count
     age_df = pd.DataFrame(df["book.publication_year"].value_counts()).reset_index()
-    age_df = age_df.sort_values(by="index")
+    age_df = age_df.sort_index()
     age_df.columns = ["publication_year", "count"]
     fig = px.bar(
         age_df,
