@@ -158,7 +158,6 @@ with row3_2:
     st.subheader("Book Age")
     # plots a bar chart of the dataframe df by book.publication year by count in plotly. columns are publication year and count
     age_df = pd.DataFrame(df["book.publication_year"].value_counts()).reset_index()
-    st.write(age_df)
     age_df = age_df.sort_values(by="book.publication_year")
     age_df.columns = ["publication_year", "count"]
     fig = px.bar(
@@ -283,8 +282,6 @@ with row5_2:
     df['read_at'] = pd.to_datetime(df['read_at'], errors='coerce')
     df['started_at'] = pd.to_datetime(df['started_at'], errors='coerce')
     valid_dates_df = df.dropna(subset=['read_at', 'started_at'])
-    st.write(valid_dates_df)
-    st.write(pd.__version__)
     valid_dates_df['days_to_complete'] = (valid_dates_df['read_at'] - valid_dates_df['started_at']).dt.days
     fig = px.histogram(
         valid_dates_df,
