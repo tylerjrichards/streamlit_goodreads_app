@@ -82,7 +82,7 @@ user_name = user_input.split(user_id, 1)[1].split("-", 1)[1].replace("-", " ")
 gr_key = st.secrets["goodreads_key"]
 
 
-@st.cache
+@st.cache_data
 def get_user_data(user_id, key=gr_key, v="2", shelf="read", per_page="200"):
     api_url_base = "https://www.goodreads.com/review/list/"
     final_url = (
@@ -131,10 +131,12 @@ st.write("")
 row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
     (0.1, 1, 0.1, 1, 0.1)
 )
+df.to_csv("books_read.csv", index=False)
 
 with row3_1:
     st.subheader("Books Read")
     year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
+    st.write(year_df)
     year_df = year_df.sort_values(by="index")
     year_df.columns = ["Year", "Count"]
     fig = px.bar(
