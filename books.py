@@ -82,7 +82,7 @@ user_name = user_input.split(user_id, 1)[1].split("-", 1)[1].replace("-", " ")
 gr_key = st.secrets["goodreads_key"]
 
 
-@st.cache
+@st.cache_data
 def get_user_data(user_id, key=gr_key, v="2", shelf="read", per_page="200"):
     api_url_base = "https://www.goodreads.com/review/list/"
     final_url = (
@@ -131,11 +131,13 @@ st.write("")
 row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
     (0.1, 1, 0.1, 1, 0.1)
 )
+df.to_csv("books_read.csv", index=False)
 
 with row3_1:
     st.subheader("Books Read")
     year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
-    year_df = year_df.sort_values(by="index")
+
+    year_df = year_df.sort_values(by="read_at_year")
     year_df.columns = ["Year", "Count"]
     fig = px.bar(
         year_df,
@@ -156,7 +158,7 @@ with row3_2:
     st.subheader("Book Age")
     # plots a bar chart of the dataframe df by book.publication year by count in plotly. columns are publication year and count
     age_df = pd.DataFrame(df["book.publication_year"].value_counts()).reset_index()
-    age_df = age_df.sort_values(by="index")
+    age_df = age_df.sort_values(by="book.publication_year")
     age_df.columns = ["publication_year", "count"]
     fig = px.bar(
         age_df,
@@ -277,11 +279,12 @@ with row5_1:
 
 with row5_2:
     st.subheader("How Quickly Do You Read?")
-    df["days_to_complete"] = (
-        pd.to_datetime(df["read_at"]) - pd.to_datetime(df["started_at"])
-    ).dt.days
+    df['read_at'] = pd.to_datetime(df['read_at'], errors='coerce')
+    df['started_at'] = pd.to_datetime(df['started_at'], errors='coerce')
+    valid_dates_df = df.dropna(subset=['read_at', 'started_at'])
+    valid_dates_df['days_to_complete'] = (valid_dates_df['read_at'] - valid_dates_df['started_at']).dt.days
     fig = px.histogram(
-        df,
+        valid_dates_df,
         x="days_to_complete",
         title="Days to Complete Distribution",
         color_discrete_sequence=["#9EE6CF"],
@@ -289,7 +292,7 @@ with row5_2:
     fig.update_xaxes(title_text="Number of Days")
     fig.update_yaxes(title_text="Count")
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
-    days_to_complete = pd.to_numeric(df["days_to_complete"].dropna())
+    days_to_complete = pd.to_numeric(valid_dates_df["days_to_complete"].dropna())
     time_len_avg = 0
     if len(days_to_complete):
         time_len_avg = round(np.mean(days_to_complete))
