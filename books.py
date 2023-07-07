@@ -284,6 +284,7 @@ with row5_2:
     df['started_at'] = pd.to_datetime(df['started_at'], errors='coerce')
     valid_dates_df = df.dropna(subset=['read_at', 'started_at'])
     st.write(valid_dates_df)
+    st.write(pd.__version__)
     valid_dates_df['days_to_complete'] = (valid_dates_df['read_at'] - valid_dates_df['started_at']).dt.days
     fig = px.histogram(
         valid_dates_df,
