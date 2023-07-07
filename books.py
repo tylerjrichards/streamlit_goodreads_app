@@ -280,6 +280,9 @@ with row5_1:
 
 with row5_2:
     st.subheader("How Quickly Do You Read?")
+    st.write(df['read_at'])
+    st.write(df['started_at'])
+    st.write(pd.to_datetime(df["read_at"], errors='coerce') - pd.to_datetime(df["started_at"], errors='coerce'))
     df["days_to_complete"] = (
         pd.to_datetime(df["read_at"]) - pd.to_datetime(df["started_at"])
     ).dt.days
