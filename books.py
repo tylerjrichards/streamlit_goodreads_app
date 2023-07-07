@@ -136,8 +136,8 @@ df.to_csv("books_read.csv", index=False)
 with row3_1:
     st.subheader("Books Read")
     year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
-    st.write(year_df)
-    year_df = year_df.sort_values(by="index")
+
+    year_df = year_df.sort_values(by="read_at_year")
     year_df.columns = ["Year", "Count"]
     fig = px.bar(
         year_df,
