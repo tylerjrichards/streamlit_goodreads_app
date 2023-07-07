@@ -2,7 +2,7 @@ gender-guesser==0.4.0
 matplotlib
 streamlit
 numpy>=1.18.5
-pandas
+pandas==1.5.3
 xmltodict
 urllib3
 seaborn>=0.11.0
