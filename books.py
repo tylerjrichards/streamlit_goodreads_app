@@ -279,10 +279,12 @@ with row5_1:
 
 with row5_2:
     st.subheader("How Quickly Do You Read?")
-    df['read_at'] = pd.to_datetime(df['read_at'], errors='coerce')
-    df['started_at'] = pd.to_datetime(df['started_at'], errors='coerce')
-    valid_dates_df = df.dropna(subset=['read_at', 'started_at'])
-    valid_dates_df['days_to_complete'] = (valid_dates_df['read_at'] - valid_dates_df['started_at']).dt.days
+    df["read_at"] = pd.to_datetime(df["read_at"], errors="coerce")
+    df["started_at"] = pd.to_datetime(df["started_at"], errors="coerce")
+    valid_dates_df = df.dropna(subset=["read_at", "started_at"])
+    valid_dates_df["days_to_complete"] = (
+        valid_dates_df["read_at"] - valid_dates_df["started_at"]
+    ).dt.days
     fig = px.histogram(
         valid_dates_df,
         x="days_to_complete",
