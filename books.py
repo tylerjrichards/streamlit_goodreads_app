@@ -7,6 +7,7 @@ import plotly.express as px
 import requests
 import streamlit as st
 import xmltodict
+from mitosheet.streamlit.v1 import spreadsheet
 from pandas import json_normalize
 from streamlit_extras.add_vertical_space import add_vertical_space
 from streamlit_lottie import st_lottie
@@ -126,6 +127,11 @@ if has_records == False:
         "No books have been read in the past 5 years, so no analysis can be done. Try another profile!"
     )
     st.stop()
+
+
+with st.expander("Play around with your data with Mito!"):
+    data, code = spreadsheet(df)
+    st.code(code)
 
 st.write("")
 row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
@@ -279,10 +285,12 @@ with row5_1:
 
 with row5_2:
     st.subheader("How Quickly Do You Read?")
-    df['read_at'] = pd.to_datetime(df['read_at'], errors='coerce')
-    df['started_at'] = pd.to_datetime(df['started_at'], errors='coerce')
-    valid_dates_df = df.dropna(subset=['read_at', 'started_at'])
-    valid_dates_df['days_to_complete'] = (valid_dates_df['read_at'] - valid_dates_df['started_at']).dt.days
+    df["read_at"] = pd.to_datetime(df["read_at"], errors="coerce")
+    df["started_at"] = pd.to_datetime(df["started_at"], errors="coerce")
+    valid_dates_df = df.dropna(subset=["read_at", "started_at"])
+    valid_dates_df["days_to_complete"] = (
+        valid_dates_df["read_at"] - valid_dates_df["started_at"]
+    ).dt.days
     fig = px.histogram(
         valid_dates_df,
         x="days_to_complete",
@@ -409,7 +417,10 @@ with row7_1:
         )
     )
 
+
     st.markdown("***")
     st.markdown(
         "Thanks for going through this mini-analysis with me! I'd love feedback on this, so if you want to reach out you can find me on [twitter](https://twitter.com/tylerjrichards) or my [website](http://www.tylerjrichards.com/)."
     )
+
+
