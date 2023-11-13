@@ -142,9 +142,8 @@ df.to_csv("books_read.csv", index=False)
 with row3_1:
     st.subheader("Books Read")
     year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
-
-    year_df = year_df.sort_values(by="read_at_year")
     year_df.columns = ["Year", "Count"]
+    year_df.sort_values(by="Year")
     fig = px.bar(
         year_df,
         x="Year",
@@ -164,8 +163,8 @@ with row3_2:
     st.subheader("Book Age")
     # plots a bar chart of the dataframe df by book.publication year by count in plotly. columns are publication year and count
     age_df = pd.DataFrame(df["book.publication_year"].value_counts()).reset_index()
-    age_df = age_df.sort_values(by="book.publication_year")
     age_df.columns = ["publication_year", "count"]
+    age_df = age_df.sort_values(by="publication_year")
     fig = px.bar(
         age_df,
         x="publication_year",
@@ -241,11 +240,13 @@ with row4_1:
 
 with row4_2:
     st.subheader("How do Goodreads Users Rate Your Reads?")
+    df["book.average_rating"] = pd.to_numeric(df["book.average_rating"])
     fig = px.histogram(
         df,
         x="book.average_rating",
         title="Goodreads User Ratings",
         color_discrete_sequence=["#9EE6CF"],
+
     )
     fig.update_xaxes(title_text="Average Rating")
     fig.update_yaxes(title_text="Count")
@@ -261,6 +262,7 @@ row5_space1, row5_1, row5_space2, row5_2, row5_space3 = st.columns(
 
 with row5_1:
     st.subheader("Book Length Distribution")
+    df['book.num_pages'] = pd.to_numeric(df['book.num_pages'])
     fig = px.histogram(
         df,
         x="book.num_pages",
