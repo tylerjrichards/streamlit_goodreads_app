@@ -143,7 +143,7 @@ with row3_1:
     st.subheader("Books Read")
     year_df = pd.DataFrame(df["read_at_year"].dropna().value_counts()).reset_index()
     year_df.columns = ["Year", "Count"]
-    year_df.sort_values(by="Year")
+    year_df = year_df.sort_values(by="Year")
     fig = px.bar(
         year_df,
         x="Year",
