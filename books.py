@@ -35,7 +35,7 @@ with row0_2:
     add_vertical_space()
 
 row0_2.subheader(
-    "A Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), get my new book on Streamlit [here!](https://www.amazon.com/Getting-Started-Streamlit-Data-Science/dp/180056550X)"
+    "A Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), get my new book on Streamlit [here!](https://www.amazon.com/Streamlit-Data-Science-Create-interactive-dp-180324822X/dp/180324822X)"
 )
 
 row1_spacer1, row1_1, row1_spacer2 = st.columns((0.1, 3.2, 0.1))
