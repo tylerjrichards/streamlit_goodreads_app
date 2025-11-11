@@ -1,0 +1,491 @@
+game_class	game_id	created_date	opening	white_username	black_username	game_result	start_time	end_time	termination	white_elo	black_elo	TimeControl	winner_side	winner_user	opponent_elo	your_elo	elo_category	opening_name
+blitz	https://www.chess.com/game/live/123415882112	2025.03.01	"0    D40
+Name: ECO, dtype: object"	jay_fh	HamilkarBarkas	0-1	08:18:12	08:21:47	HamilkarBarkas won by resignation	1753	1749	180+2	black	HamilkarBarkas	1749	1753	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123416306094	2025.03.01	"0    D44
+Name: ECO, dtype: object"	jay_fh	n8shade	0-1	08:37:32	08:43:51	n8shade won by checkmate	1746	1790	180+2	black	n8shade	1790	1746	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123416793798	2025.03.01	"0    B00
+Name: ECO, dtype: object"	sonyb2003	jay_fh	1-0	08:59:02	09:06:47	sonyb2003 won by resignation	1806	1739	180+2	white	sonyb2003	1806	1739	Stronger	Nimzowitsch Defense: Colorado Countergambit
+blitz	https://www.chess.com/game/live/123421258970	2025.03.01	"0    D25
+Name: ECO, dtype: object"	jay_fh	lllsand	1-0	11:54:48	12:00:45	jay_fh won by resignation	1747	1717	180+2	white	jay_fh	1717	1747	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123421426688	2025.03.01	"0    A02
+Name: ECO, dtype: object"	JosephW_CT	jay_fh	0-1	12:00:49	12:08:53	jay_fh won by resignation	1741	1755	180+2	black	jay_fh	1741	1755	Similar	Bird Opening
+blitz	https://www.chess.com/game/live/123421685342	2025.03.01	"0    D26
+Name: ECO, dtype: object"	jay_fh	JeevanRai22	0-1	12:10:05	12:17:41	JeevanRai22 won by resignation	1745	1687	180+2	black	JeevanRai22	1687	1745	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123431279874	2025.03.01	"0    D35
+Name: ECO, dtype: object"	sttapi	jay_fh	1/2-1/2	17:14:58	17:21:35	Game drawn by agreement	1696	1744	180+2	draw	draw	1696	1744	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123431498120	2025.03.01	"0    B13
+Name: ECO, dtype: object"	jay_fh	vince_russel	1-0	17:21:39	17:23:37	jay_fh won by resignation	1752	1753	180+2	white	jay_fh	1753	1752	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123431580186	2025.03.01	"0    A13
+Name: ECO, dtype: object"	vince_russel	jay_fh	0-1	17:24:11	17:30:38	jay_fh won on time	1745	1760	180+2	black	jay_fh	1745	1760	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123432015472	2025.03.01	"0    D38
+Name: ECO, dtype: object"	jay_fh	QueensTamer	1-0	17:37:47	17:42:50	jay_fh won by resignation	1768	1750	180+2	white	jay_fh	1750	1768	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123432177834	2025.03.01	"0    C11
+Name: ECO, dtype: object"	KalininAA	jay_fh	0-1	17:42:57	17:46:12	jay_fh won by resignation	1750	1776	180+2	black	jay_fh	1750	1776	Similar	French Defense: Steinitz Variation
+blitz	https://www.chess.com/game/live/123432286362	2025.03.01	"0    D12
+Name: ECO, dtype: object"	jay_fh	behrozasadi	0-1	17:46:24	17:52:24	behrozasadi won by resignation	1768	1781	180+2	black	behrozasadi	1781	1768	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123448028994	2025.03.02	"0    C01
+Name: ECO, dtype: object"	November79	jay_fh	0-1	05:16:33	05:21:07	jay_fh won by resignation	1740	1776	180+2	black	jay_fh	1740	1776	Similar	French Defense: Exchange Variation
+blitz	https://www.chess.com/game/live/123448114348	2025.03.02	"0    E61
+Name: ECO, dtype: object"	jay_fh	sidraxkrish	1-0	05:21:14	05:29:13	jay_fh won on time	1786	1842	180+2	white	jay_fh	1842	1786	Stronger	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123448261710	2025.03.02	"0    C11
+Name: ECO, dtype: object"	GMTrombinivga	jay_fh	0-1	05:29:20	05:34:56	jay_fh won by resignation	1854	1796	180+2	black	jay_fh	1854	1796	Stronger	Rat Defense: Small Center Defense
+blitz	https://www.chess.com/game/live/123448369988	2025.03.02	"0    D45
+Name: ECO, dtype: object"	jay_fh	Fulcanelli1	1-0	05:35:16	05:43:03	jay_fh won on time	1804	1782	180+2	white	jay_fh	1782	1804	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123448517488	2025.03.02	"0    C01
+Name: ECO, dtype: object"	avien17	jay_fh	0-1	05:43:16	05:49:13	jay_fh won on time	1785	1812	180+2	black	jay_fh	1785	1812	Similar	French Defense: Exchange Variation
+blitz	https://www.chess.com/game/live/123455672700	2025.03.02	"0    E61
+Name: ECO, dtype: object"	jay_fh	kvdrik	0-1	11:01:15	11:07:19	kvdrik won by resignation	1802	1755	180+2	black	kvdrik	1755	1802	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123457901436	2025.03.02	"0    E06
+Name: ECO, dtype: object"	AlZiHD	jay_fh	1-0	12:22:54	12:31:29	AlZiHD won by resignation	1825	1794	180+2	white	AlZiHD	1825	1794	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123458835912	2025.03.02	"0    E61
+Name: ECO, dtype: object"	jay_fh	SuperSecret98765	0-1	12:55:00	13:02:41	SuperSecret98765 won by resignation	1786	1785	180+2	black	SuperSecret98765	1785	1786	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123462455884	2025.03.02	"0    D02
+Name: ECO, dtype: object"	Makarii_o	jay_fh	1-0	14:52:35	14:56:51	Makarii_o won by resignation	1827	1779	180+2	white	Makarii_o	1827	1779	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123463732316	2025.03.02	"0    A13
+Name: ECO, dtype: object"	Cesarflo	jay_fh	0-1	15:32:48	15:39:04	jay_fh won by checkmate	1769	1787	180+2	black	jay_fh	1769	1787	Similar	Zukertort Opening: Shabalov Gambit
+blitz	https://www.chess.com/game/live/123463931442	2025.03.02	"0    A84
+Name: ECO, dtype: object"	jay_fh	gerhanaaldy	0-1	15:39:10	15:43:44	gerhanaaldy won by resignation	1780	1840	180+2	black	gerhanaaldy	1840	1780	Stronger	Dutch Defense
+blitz	https://www.chess.com/game/live/123486798012	2025.03.03	"0    D37
+Name: ECO, dtype: object"	RS-Rawat	jay_fh	1-0	07:41:48	07:45:02	RS-Rawat won by resignation	1807	1772	180+2	white	RS-Rawat	1807	1772	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123486866226	2025.03.03	"0    A40
+Name: ECO, dtype: object"	jay_fh	catsbirds	0-1	07:45:09	07:50:04	catsbirds won by resignation	1764	1796	180+2	black	catsbirds	1796	1764	Similar	English Defense
+blitz	https://www.chess.com/game/live/123487596992	2025.03.03	"0    D37
+Name: ECO, dtype: object"	jay_fh	Shuvo12	0-1	08:20:30	08:21:45	Shuvo12 won by resignation	1756	1764	180+2	black	Shuvo12	1764	1756	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123491767212	2025.03.03	"0    C02
+Name: ECO, dtype: object"	albiesriram	jay_fh	1-0	11:16:13	11:19:19	albiesriram won by resignation	1734	1747	180+2	white	albiesriram	1734	1747	Similar	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/123524546134	2025.03.04	"0    E34
+Name: ECO, dtype: object"	jay_fh	f16junsu	1-0	08:02:17	08:06:21	jay_fh won by resignation	1754	1716	180+2	white	jay_fh	1716	1754	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123524635936	2025.03.04	"0    C00
+Name: ECO, dtype: object"	Uilsonny	jay_fh	0-1	08:06:27	08:15:13	jay_fh won by resignation	1717	1761	180+2	black	jay_fh	1717	1761	Similar	French Defense: Chigorin Variation
+blitz	https://www.chess.com/game/live/123525105506	2025.03.04	"0    C11
+Name: ECO, dtype: object"	Leikern	jay_fh	1-0	08:28:04	08:32:25	Leikern won by resignation	1735	1752	180+2	white	Leikern	1735	1752	Similar	French Defense: Steinitz Variation
+blitz	https://www.chess.com/game/live/123529936978	2025.03.04	"0    D22
+Name: ECO, dtype: object"	jay_fh	n8shade	0-1	11:47:26	11:56:14	n8shade won by checkmate	1745	1802	180+2	black	n8shade	1802	1745	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123530199408	2025.03.04	"0    D43
+Name: ECO, dtype: object"	jay_fh	sam_mwaniki	0-1	11:56:59	12:03:34	sam_mwaniki won by resignation	1737	1742	180+2	black	sam_mwaniki	1742	1737	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123532483164	2025.03.04	"0    A17
+Name: ECO, dtype: object"	prompt801	jay_fh	0-1	13:16:14	13:23:49	jay_fh won on time	1697	1744	180+2	black	jay_fh	1697	1744	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123532711684	2025.03.04	"0    D02
+Name: ECO, dtype: object"	Snekkles	jay_fh	0-1	13:23:55	13:29:43	jay_fh won by resignation	1752	1752	180+2	black	jay_fh	1752	1752	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123532894218	2025.03.04	"0    A40
+Name: ECO, dtype: object"	jay_fh	ryanTG88	0-1	13:30:02	13:33:23	ryanTG88 won by resignation	1745	1819	180+2	black	ryanTG88	1819	1745	Stronger	English Defense
+blitz	https://www.chess.com/game/live/123534118378	2025.03.04	"0    E61
+Name: ECO, dtype: object"	jay_fh	tomaskarlsson	1-0	13:51:06	13:58:12	jay_fh won by resignation	1754	1791	180+2	white	jay_fh	1791	1754	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123534321570	2025.03.04	"0    D30
+Name: ECO, dtype: object"	Chess_Noob0927	jay_fh	0-1	13:58:17	13:59:38	jay_fh won by resignation	1733	1762	180+2	black	jay_fh	1733	1762	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123534361096	2025.03.04	"0    C01
+Name: ECO, dtype: object"	JimmKopsa	jay_fh	0-1	13:59:45	14:03:05	jay_fh won by checkmate	1778	1771	180+2	black	jay_fh	1778	1771	Similar	French Defense: Exchange Variation, Svenonius Variation
+blitz	https://www.chess.com/game/live/123534472408	2025.03.04	"0    E61
+Name: ECO, dtype: object"	jay_fh	Thinkfulman	1-0	14:03:14	14:09:30	jay_fh won on time	1778	1727	180+2	white	jay_fh	1727	1778	Stronger	Colle System: Pterodactyl Variation
+blitz	https://www.chess.com/game/live/123534771620	2025.03.04	"0    D30
+Name: ECO, dtype: object"	jay_fh	Metleb68	1-0	14:13:12	14:17:28	jay_fh won by resignation	1786	1789	180+2	white	jay_fh	1789	1786	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123536211020	2025.03.04	"0    B13
+Name: ECO, dtype: object"	jay_fh	arg81	1-0	14:55:28	15:01:43	jay_fh won on time	1796	1844	180+2	white	jay_fh	1844	1796	Similar	Benoni Defense: Benoni Gambit Accepted
+blitz	https://www.chess.com/game/live/123536414684	2025.03.04	"0    D00
+Name: ECO, dtype: object"	jay_fh	Shuvo12	0-1	15:01:54	15:03:54	Shuvo12 won by resignation	1787	1761	180+2	black	Shuvo12	1761	1787	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123537971378	2025.03.04	"0    C03
+Name: ECO, dtype: object"	jerinroshan	jay_fh	1-0	15:49:32	15:55:57	jerinroshan won on time	1786	1779	180+2	white	jerinroshan	1786	1779	Similar	French Defense: Tarrasch Variation, Botvinnik Variation
+blitz	https://www.chess.com/game/live/123570878318	2025.03.05	"0    A13
+Name: ECO, dtype: object"	reyhani_adel	jay_fh	0-1	14:17:59	14:20:17	jay_fh won - game abandoned	1797	1788	180+2	black	jay_fh	1797	1788	Similar	Hungarian Opening
+blitz	https://www.chess.com/game/live/123570986764	2025.03.05	"0    A00
+Name: ECO, dtype: object"	sirnathpogi	jay_fh	1-0	14:21:21	14:26:26	sirnathpogi won by resignation	1940	1783	180+2	white	sirnathpogi	1940	1783	Stronger	Anderssen's Opening
+blitz	https://www.chess.com/game/live/123571157406	2025.03.05	"0    E14
+Name: ECO, dtype: object"	jay_fh	VladS87	0-1	14:26:35	14:31:10	VladS87 won by resignation	1775	1771	180+2	black	VladS87	1771	1775	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123577396524	2025.03.05	"0    D30
+Name: ECO, dtype: object"	Sukhmanbikram	jay_fh	0-1	17:32:30	17:42:16	jay_fh won by resignation	1777	1783	180+2	black	jay_fh	1777	1783	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123599592178	2025.03.06	"0    A84
+Name: ECO, dtype: object"	jay_fh	faber3nt	0-1	09:42:06	09:50:24	faber3nt won on time	1775	1812	180+2	black	faber3nt	1812	1775	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123601560156	2025.03.06	"0    C13
+Name: ECO, dtype: object"	dabelair	jay_fh	0-1	11:01:46	11:09:57	jay_fh won on time	1759	1783	180+2	black	jay_fh	1759	1783	Similar	French Defense: Classical Variation, Richter Attack
+blitz	https://www.chess.com/game/live/123604423196	2025.03.06	"0    A84
+Name: ECO, dtype: object"	jay_fh	khairuldccx	0-1	12:46:20	12:48:46	khairuldccx won by resignation	1775	1803	180+2	black	khairuldccx	1803	1775	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123606695086	2025.03.06	"0    C02
+Name: ECO, dtype: object"	JucaMontenegro	jay_fh	0-1	14:01:33	14:09:05	jay_fh won on time	1755	1783	180+2	black	jay_fh	1755	1783	Similar	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/123606949918	2025.03.06	"0    C01
+Name: ECO, dtype: object"	jay_fh	sistem_tall	1-0	14:09:37	14:18:16	jay_fh won on time	1792	1798	180+2	white	jay_fh	1798	1792	Similar	Englund Gambit Declined: Reversed French
+blitz	https://www.chess.com/game/live/123607229272	2025.03.06	"0    D12
+Name: ECO, dtype: object"	jay_fh	ArthurMorgan23	1/2-1/2	14:18:21	14:27:13	Game drawn by agreement	1792	1808	180+2	draw	draw	1808	1792	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123607519222	2025.03.06	"0    C11
+Name: ECO, dtype: object"	Nh023	jay_fh	0-1	14:27:19	14:35:45	jay_fh won on time	1774	1800	180+2	black	jay_fh	1774	1800	Similar	French Defense: Steinitz Variation, Boleslavsky Variation
+blitz	https://www.chess.com/game/live/123608510238	2025.03.06	"0    D37
+Name: ECO, dtype: object"	jay_fh	risiur	1-0	14:57:52	15:05:04	jay_fh won by resignation	1808	1796	180+2	white	jay_fh	1796	1808	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123628044086	2025.03.07	"0    C01
+Name: ECO, dtype: object"	chesshunters33	jay_fh	0-1	02:52:49	03:02:03	jay_fh won by checkmate	1787	1816	180+2	black	jay_fh	1787	1816	Similar	Rat Defense: Small Center Defense
+blitz	https://www.chess.com/game/live/123634143562	2025.03.07	"0    B14
+Name: ECO, dtype: object"	jay_fh	Igor12345igor	1-0	08:14:11	08:16:20	jay_fh won by checkmate	1823	1773	180+2	white	jay_fh	1773	1823	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/123634192064	2025.03.07	"0    C02
+Name: ECO, dtype: object"	TheMagicIL	jay_fh	1-0	08:16:25	08:22:38	TheMagicIL won by resignation	1814	1815	180+2	white	TheMagicIL	1814	1815	Similar	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/123635017152	2025.03.07	"0    E61
+Name: ECO, dtype: object"	jay_fh	anfurst	1-0	08:53:53	08:59:52	jay_fh won by resignation	1820	1690	180+2	white	jay_fh	1690	1820	Weaker	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/123635302230	2025.03.07	"0    C05
+Name: ECO, dtype: object"	Alex_Kirin	jay_fh	1-0	09:06:31	09:11:26	Alex_Kirin won on time	1820	1812	180+2	white	Alex_Kirin	1820	1812	Similar	French Defense: Tarrasch Variation, Botvinnik Variation
+blitz	https://www.chess.com/game/live/123636037276	2025.03.07	"0    D00
+Name: ECO, dtype: object"	bboss1275	jay_fh	1-0	09:38:04	09:41:02	bboss1275 won by resignation	1892	1806	180+2	white	bboss1275	1892	1806	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/123636616710	2025.03.07	"0    A40
+Name: ECO, dtype: object"	jay_fh	Jusiukas123	0-1	10:02:06	10:06:58	Jusiukas123 won by resignation	1798	1810	180+2	black	Jusiukas123	1810	1798	Similar	Englund Gambit Declined: Reversed French
+blitz	https://www.chess.com/game/live/123636991726	2025.03.07	"0    D53
+Name: ECO, dtype: object"	balourdeau	jay_fh	1-0	10:17:20	10:23:34	balourdeau won by resignation	1845	1791	180+2	white	balourdeau	1845	1791	Stronger	English Opening: Anglo-Indian Defense, Queen's Indian Formation
+blitz	https://www.chess.com/game/live/136000056496	2025.03.07	"0    D32
+Name: ECO, dtype: object"	jay_fh	yycy24	1-0	11:48:06	11:53:13	jay_fh won by resignation	1798	1727	180+2	white	jay_fh	1727	1798	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136000201888	2025.03.07	"0    D45
+Name: ECO, dtype: object"	jay_fh	redeyebill	1-0	11:53:20	11:58:58	jay_fh won - game abandoned	1805	1742	180+2	white	jay_fh	1742	1805	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136000367516	2025.03.07	"0    C00
+Name: ECO, dtype: object"	wimwamwom10	jay_fh	0-1	11:59:18	12:01:11	jay_fh won by resignation	1737	1812	180+2	black	jay_fh	1737	1812	Stronger	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136000439658	2025.03.07	"0    C02
+Name: ECO, dtype: object"	zouari1973	jay_fh	0-1	12:01:54	12:05:21	jay_fh won - game abandoned	1760	1819	180+2	black	jay_fh	1760	1819	Stronger	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136000555028	2025.03.07	"0    D35
+Name: ECO, dtype: object"	BenSchandorff	jay_fh	1-0	12:06:02	12:07:52	BenSchandorff won by resignation	1831	1811	180+2	white	BenSchandorff	1831	1811	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136002269784	2025.03.07	"0    D38
+Name: ECO, dtype: object"	jay_fh	jcaido	1-0	13:05:18	13:11:20	jay_fh won on time	1819	1798	180+2	white	jay_fh	1798	1819	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136002454998	2025.03.07	"0    D38
+Name: ECO, dtype: object"	jay_fh	moham622	0-1	13:11:27	13:13:55	moham622 won by resignation	1810	1790	180+2	black	moham622	1790	1810	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136002531120	2025.03.07	"0    A46
+Name: ECO, dtype: object"	jay_fh	WorkingHarderThanKobe	0-1	13:13:59	13:21:13	WorkingHarderThanKobe won by resignation	1802	1814	180+2	black	WorkingHarderThanKobe	1814	1802	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136003105512	2025.03.07	"0    C00
+Name: ECO, dtype: object"	Petroff0505	jay_fh	0-1	13:32:47	13:40:40	jay_fh won on time	1810	1810	180+2	black	jay_fh	1810	1810	Similar	French Defense: La Bourdonnais Variation, Reuter Gambit
+blitz	https://www.chess.com/game/live/136003356230	2025.03.07	"0    D07
+Name: ECO, dtype: object"	jay_fh	viktormihailboev51	1-0	13:40:47	13:50:49	jay_fh won by resignation	1819	1844	180+2	white	jay_fh	1844	1819	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136003699346	2025.03.07	"0    D30
+Name: ECO, dtype: object"	gilefren	jay_fh	1-0	13:51:36	13:59:41	gilefren won on time	1904	1813	180+2	white	gilefren	1904	1813	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136006460126	2025.03.07	"0    D55
+Name: ECO, dtype: object"	RichardLedwidge	jay_fh	1-0	15:15:57	15:19:16	RichardLedwidge won by resignation	1809	1805	180+2	white	RichardLedwidge	1809	1805	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136006573154	2025.03.07	"0    E14
+Name: ECO, dtype: object"	jay_fh	vlkorchnoi	0-1	15:19:20	15:21:34	vlkorchnoi won by resignation	1796	1780	180+2	black	vlkorchnoi	1780	1796	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136027840362	2025.03.08	"0    E61
+Name: ECO, dtype: object"	jay_fh	RajKinect	0-1	05:22:39	05:26:39	RajKinect won by resignation	1787	1777	180+2	black	RajKinect	1777	1787	Similar	Colle System: Pterodactyl Variation
+blitz	https://www.chess.com/game/live/136027916746	2025.03.08	"0    D05
+Name: ECO, dtype: object"	Saahilm	jay_fh	0-1	05:26:49	05:33:03	jay_fh won by resignation	1855	1797	180+2	black	jay_fh	1855	1797	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136028045320	2025.03.08	"0    D20
+Name: ECO, dtype: object"	jay_fh	faylz1992	1-0	05:33:49	05:40:22	jay_fh won by resignation	1805	1772	180+2	white	jay_fh	1772	1805	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136028169016	2025.03.08	"0    C00
+Name: ECO, dtype: object"	kgkasparov	jay_fh	1-0	05:40:30	05:47:36	kgkasparov won on time	1816	1797	180+2	white	kgkasparov	1816	1797	Similar	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136028401506	2025.03.08	"0    D53
+Name: ECO, dtype: object"	arshil420	jay_fh	1-0	05:53:01	05:57:27	arshil420 won by resignation	1786	1789	180+2	white	arshil420	1786	1789	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136029801722	2025.03.08	"0    D10
+Name: ECO, dtype: object"	jay_fh	Sid_007	0-1	07:04:51	07:11:25	Sid_007 won by resignation	1780	1754	180+2	black	Sid_007	1754	1780	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136030028980	2025.03.08	"0    D53
+Name: ECO, dtype: object"	beerappabharathb	jay_fh	1-0	07:15:53	07:18:39	beerappabharathb won by resignation	1750	1771	180+2	white	beerappabharathb	1750	1771	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136030197020	2025.03.08	"0    A46
+Name: ECO, dtype: object"	maximilianpitsch	jay_fh	0-1	07:23:56	07:28:41	jay_fh won by resignation	1746	1779	180+2	black	jay_fh	1746	1779	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136030306432	2025.03.08	"0    E61
+Name: ECO, dtype: object"	jay_fh	fischer_tanvir	0-1	07:29:08	07:33:50	fischer_tanvir won by resignation	1771	1786	180+2	black	fischer_tanvir	1786	1771	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136033457596	2025.03.08	"0    D12
+Name: ECO, dtype: object"	jay_fh	MrBlunderini	1/2-1/2	09:49:03	09:54:34	Game drawn by agreement	1769	1703	180+2	draw	draw	1703	1769	Stronger	Queen's Pawn Game: Anglo-Slav Opening
+blitz	https://www.chess.com/game/live/136035923516	2025.03.08	"0    D12
+Name: ECO, dtype: object"	jay_fh	NamanGargop	0-1	11:26:29	11:30:12	NamanGargop won by resignation	1761	1761	180+2	black	NamanGargop	1761	1761	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136036023752	2025.03.08	"0    D37
+Name: ECO, dtype: object"	TyronRobilung	jay_fh	0-1	11:30:18	11:34:29	jay_fh won - game abandoned	1793	1770	180+2	black	jay_fh	1793	1770	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136038967504	2025.03.08	"0    A40
+Name: ECO, dtype: object"	Vezun	jay_fh	1-0	13:16:47	13:19:51	Vezun won by resignation	1795	1762	180+2	white	Vezun	1795	1762	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136062754802	2025.03.09	"0    A40
+Name: ECO, dtype: object"	jay_fh	Khwab27082004	1-0	04:57:22	05:04:47	jay_fh won by resignation	1769	1720	180+2	white	jay_fh	1720	1769	Similar	Englund Gambit Declined: Reversed French
+blitz	https://www.chess.com/game/live/136062889936	2025.03.09	"0    E34
+Name: ECO, dtype: object"	jay_fh	Tanvik18	0-1	05:04:55	05:11:56	Tanvik18 won by resignation	1760	1740	180+2	black	Tanvik18	1740	1760	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136063075500	2025.03.09	"0    C01
+Name: ECO, dtype: object"	b2ogeyman	jay_fh	1-0	05:15:03	05:18:45	b2ogeyman won by resignation	1790	1753	180+2	white	b2ogeyman	1790	1753	Similar	French Defense: Exchange Variation
+blitz	https://www.chess.com/game/live/136064378010	2025.03.09	"0    D44
+Name: ECO, dtype: object"	Strafecke	jay_fh	0-1	06:25:02	06:32:52	jay_fh won by resignation	1677	1759	180+2	black	jay_fh	1677	1759	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136064534530	2025.03.09	"0    A40
+Name: ECO, dtype: object"	jay_fh	zlatkoflashg	1-0	06:32:57	06:37:36	jay_fh won by resignation	1766	1721	180+2	white	jay_fh	1721	1766	Similar	English Defense
+blitz	https://www.chess.com/game/live/136064634762	2025.03.09	"0    D45
+Name: ECO, dtype: object"	jay_fh	RyanChngYanHao	0-1	06:38:00	06:46:37	RyanChngYanHao won by resignation	1758	1787	180+2	black	RyanChngYanHao	1787	1758	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136072347258	2025.03.09	"0    E14
+Name: ECO, dtype: object"	jay_fh	Remi1974	0-1	12:07:26	12:13:23	Remi1974 won on time	1751	1788	180+2	black	Remi1974	1788	1751	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136072566762	2025.03.09	"0    D00
+Name: ECO, dtype: object"	Phil_1982	jay_fh	1-0	12:15:43	12:21:10	Phil_1982 won by resignation	1763	1743	180+2	white	Phil_1982	1763	1743	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136072716380	2025.03.09	"0    D10
+Name: ECO, dtype: object"	jay_fh	Rishi29Thakur	1/2-1/2	12:21:20	12:30:15	Game drawn by repetition	1743	1745	180+2	draw	draw	1745	1743	Similar	Queen's Pawn Game: Anglo-Slav Opening
+blitz	https://www.chess.com/game/live/136072957926	2025.03.09	"0    B13
+Name: ECO, dtype: object"	sammeman992	jay_fh	1-0	12:30:24	12:34:39	sammeman992 won by resignation	1781	1736	180+2	white	sammeman992	1781	1736	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136076853636	2025.03.09	"0    C11
+Name: ECO, dtype: object"	ottoian	jay_fh	0-1	14:43:53	14:49:08	jay_fh won by resignation	1692	1743	180+2	black	jay_fh	1692	1743	Stronger	French Defense: Steinitz Variation
+blitz	https://www.chess.com/game/live/136077027564	2025.03.09	"0    D15
+Name: ECO, dtype: object"	jay_fh	yusielmasteraprendis	1-0	14:49:28	14:52:25	jay_fh won by resignation	1752	1759	180+2	white	jay_fh	1759	1752	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136077120464	2025.03.09	"0    C01
+Name: ECO, dtype: object"	Alejandrochess11	jay_fh	0-1	14:52:30	14:54:46	jay_fh won - game abandoned	1759	1760	180+2	black	jay_fh	1759	1760	Similar	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136077205730	2025.03.09	"0    C00
+Name: ECO, dtype: object"	MkDU	jay_fh	1-0	14:55:14	15:02:51	MkDU won on time	1763	1752	180+2	white	MkDU	1763	1752	Similar	French Defense: Knight Variation
+blitz	https://www.chess.com/game/live/136078002446	2025.03.09	"0    E61
+Name: ECO, dtype: object"	jay_fh	joemug	1-0	15:21:10	15:27:15	jay_fh won by checkmate	1760	1742	180+2	white	jay_fh	1742	1760	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136078213064	2025.03.09	"0    A13
+Name: ECO, dtype: object"	Tigeve777	jay_fh	1-0	15:28:03	15:36:49	Tigeve777 won on time	1808	1753	180+2	white	Tigeve777	1808	1753	Stronger	English Opening: Agincourt Defense
+blitz	https://www.chess.com/game/live/136079710338	2025.03.09	"0    A84
+Name: ECO, dtype: object"	jay_fh	croquete	1-0	16:17:37	16:22:34	jay_fh won by resignation	1761	1730	180+2	white	jay_fh	1730	1761	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136079884490	2025.03.09	"0    A84
+Name: ECO, dtype: object"	jay_fh	VeganDevil	0-1	16:23:25	16:29:22	VeganDevil won by resignation	1754	1808	180+2	black	VeganDevil	1808	1754	Stronger	Dutch Defense
+blitz	https://www.chess.com/game/live/136097957930	2025.03.10	"0    C11
+Name: ECO, dtype: object"	RATP_Shaminda	jay_fh	1-0	04:57:54	05:00:05	RATP_Shaminda won by resignation	1731	1745	180+2	white	RATP_Shaminda	1731	1745	Similar	French Defense: Pelikan Variation
+blitz	https://www.chess.com/game/live/136104153758	2025.03.10	"0    D43
+Name: ECO, dtype: object"	jay_fh	John_raid	1-0	10:18:44	10:23:49	jay_fh won by resignation	1753	1742	180+2	white	jay_fh	1742	1753	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136104310186	2025.03.10	"0    D43
+Name: ECO, dtype: object"	jay_fh	matt-511	1-0	10:25:05	10:35:17	jay_fh won by checkmate	1770	1783	180+2	white	jay_fh	1783	1770	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136117953362	2025.03.10	"0    C02
+Name: ECO, dtype: object"	Reidur92	jay_fh	1-0	17:48:12	17:53:16	Reidur92 won by resignation	1800	1763	180+2	white	Reidur92	1800	1763	Similar	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136118139950	2025.03.10	"0    C00
+Name: ECO, dtype: object"	mdnavy	jay_fh	0-1	17:53:40	17:59:27	jay_fh won on time	1736	1771	180+2	black	jay_fh	1736	1771	Similar	French Defense: Steinitz Attack
+blitz	https://www.chess.com/game/live/136118400166	2025.03.10	"0    D40
+Name: ECO, dtype: object"	jay_fh	VescovoLeonardoEugenio	0-1	18:01:19	18:08:10	VescovoLeonardoEugenio won on time	1762	1745	180+2	black	VescovoLeonardoEugenio	1745	1762	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136130979012	2025.03.11	"0    C14
+Name: ECO, dtype: object"	rohinmeduri	jay_fh	0-1	01:58:38	02:06:53	jay_fh won by resignation	1765	1770	180+2	black	jay_fh	1765	1770	Similar	Rat Defense: Small Center Defense
+blitz	https://www.chess.com/game/live/136131409510	2025.03.11	"0    C02
+Name: ECO, dtype: object"	Alialmisky	jay_fh	1-0	02:21:59	02:24:37	Alialmisky won by resignation	1853	1764	180+2	white	Alialmisky	1853	1764	Stronger	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136134484380	2025.03.11	"0    A45
+Name: ECO, dtype: object"	jay_fh	adeninex	0-1	05:14:48	05:18:25	adeninex won by resignation	1755	1744	180+2	black	adeninex	1744	1755	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136134549296	2025.03.11	"0    D30
+Name: ECO, dtype: object"	NurhanK	jay_fh	0-1	05:18:33	05:26:11	jay_fh won - game abandoned	1736	1763	180+2	black	jay_fh	1736	1763	Similar	English Opening: Anglo-Indian Defense, Queen's Indian Formation
+blitz	https://www.chess.com/game/live/136135076658	2025.03.11	"0    C00
+Name: ECO, dtype: object"	MarkGambit20	jay_fh	0-1	05:48:17	05:55:00	jay_fh won by resignation	1794	1772	180+2	black	jay_fh	1794	1772	Similar	King's Indian Attack: Sicilian Variation
+blitz	https://www.chess.com/game/live/136136095498	2025.03.11	"0    D31
+Name: ECO, dtype: object"	jay_fh	adriman_ecuador	0-1	06:43:03	06:45:12	adriman_ecuador won by resignation	1764	1793	180+2	black	adriman_ecuador	1793	1764	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136138237654	2025.03.11	"0    D45
+Name: ECO, dtype: object"	jay_fh	kasparoviidriz	0-1	08:28:36	08:37:04	kasparoviidriz won by checkmate	1756	1769	180+2	black	kasparoviidriz	1769	1756	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136139693010	2025.03.11	"0    E61
+Name: ECO, dtype: object"	jay_fh	ftripoli	1-0	09:33:06	09:41:35	jay_fh won on time	1764	1760	180+2	white	jay_fh	1760	1764	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136139898220	2025.03.11	"0    D35
+Name: ECO, dtype: object"	JJ-92	jay_fh	1-0	09:41:42	09:48:12	JJ-92 won by resignation	1738	1755	180+2	white	JJ-92	1738	1755	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136141725534	2025.03.11	"0    D12
+Name: ECO, dtype: object"	jay_fh	JJ-92	0-1	10:54:28	10:57:32	JJ-92 won by resignation	1748	1790	180+2	black	JJ-92	1790	1748	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136142484950	2025.03.11	"0    C02
+Name: ECO, dtype: object"	Hieusama	jay_fh	0-1	11:46:24	11:53:20	jay_fh won by checkmate	1703	1755	180+2	black	jay_fh	1703	1755	Stronger	Rat Defense: Small Center Defense
+blitz	https://www.chess.com/game/live/136150228916	2025.03.11	"0    C00
+Name: ECO, dtype: object"	TacticalSlave	jay_fh	0-1	15:59:09	16:03:03	jay_fh won by resignation	1736	1763	180+2	black	jay_fh	1736	1763	Similar	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136150595992	2025.03.11	"0    A43
+Name: ECO, dtype: object"	jay_fh	Top10_poland	1-0	16:09:59	16:18:20	jay_fh won by resignation	1771	1761	180+2	white	jay_fh	1761	1771	Similar	Benoni Defense: Benoni Gambit Accepted
+blitz	https://www.chess.com/game/live/136151614460	2025.03.11	"0    A45
+Name: ECO, dtype: object"	blankaa84	jay_fh	0-1	16:39:20	16:41:21	jay_fh won by resignation	1776	1779	180+2	black	jay_fh	1776	1779	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136183172768	2025.03.12	"0    D30
+Name: ECO, dtype: object"	blaslosbanos	jay_fh	0-1	14:23:40	14:31:37	jay_fh won by checkmate	1768	1787	180+2	black	jay_fh	1768	1787	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136184120272	2025.03.12	"0    D10
+Name: ECO, dtype: object"	jay_fh	GerrysSacrifice	0-1	14:51:46	14:58:17	GerrysSacrifice won by resignation	1777	1729	180+2	black	GerrysSacrifice	1729	1777	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136184379184	2025.03.12	"0    D38
+Name: ECO, dtype: object"	jay_fh	RolfBenny	0-1	14:59:28	15:08:19	RolfBenny won on time	1768	1750	180+2	black	RolfBenny	1750	1768	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136202062048	2025.03.13	"0    C02
+Name: ECO, dtype: object"	ES_00	jay_fh	1-0	01:36:07	01:44:40	ES_00 won on time	1761	1760	180+2	white	ES_00	1761	1760	Similar	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136207522064	2025.03.13	"0    A40
+Name: ECO, dtype: object"	jay_fh	Turan-AZE	0-1	06:39:14	06:41:03	Turan-AZE won by checkmate	1750	1682	180+2	black	Turan-AZE	1682	1750	Stronger	English Defense
+blitz	https://www.chess.com/game/live/136207590702	2025.03.13	"0    D44
+Name: ECO, dtype: object"	slmanju	jay_fh	0-1	06:42:44	06:45:45	jay_fh won by resignation	1680	1757	180+2	black	jay_fh	1680	1757	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136207656004	2025.03.13	"0    A41
+Name: ECO, dtype: object"	jay_fh	Pullela09	0-1	06:46:03	06:54:15	Pullela09 won by resignation	1751	1861	180+2	black	Pullela09	1861	1751	Stronger	Old Indian Defense
+blitz	https://www.chess.com/game/live/136207941258	2025.03.13	"0    C11
+Name: ECO, dtype: object"	exaNnG4	jay_fh	1-0	07:00:31	07:06:14	exaNnG4 won by resignation	1744	1743	180+2	white	exaNnG4	1744	1743	Similar	French Defense: Steinitz Variation
+blitz	https://www.chess.com/game/live/136218644968	2025.03.13	"0    D12
+Name: ECO, dtype: object"	jay_fh	galzand	1/2-1/2	13:56:37	14:07:09	Game drawn by stalemate	1743	1750	180+2	draw	draw	1750	1743	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136241406784	2025.03.14	"0    C02
+Name: ECO, dtype: object"	oussama4mahmoudi	jay_fh	0-1	03:51:23	03:58:14	jay_fh won by resignation	1656	1749	180+2	black	jay_fh	1656	1749	Stronger	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136248562592	2025.03.14	"0    B13
+Name: ECO, dtype: object"	jay_fh	ALTAMASSABBIR	1-0	09:49:08	09:53:15	jay_fh won - game abandoned	1756	1716	180+2	white	jay_fh	1716	1756	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136254535676	2025.03.14	"0    C11
+Name: ECO, dtype: object"	ksto123	jay_fh	0-1	13:27:46	13:36:39	jay_fh won on time	1757	1764	180+2	black	jay_fh	1757	1764	Similar	French Defense: Classical Variation, Swiss Variation
+blitz	https://www.chess.com/game/live/136254817052	2025.03.14	"0    D30
+Name: ECO, dtype: object"	talfischersasi	jay_fh	0-1	13:36:45	13:43:24	jay_fh won on time	1710	1771	180+2	black	jay_fh	1710	1771	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136255195662	2025.03.14	"0    D43
+Name: ECO, dtype: object"	jay_fh	Matok0	0-1	13:48:29	13:55:26	Matok0 won by resignation	1763	1774	180+2	black	Matok0	1774	1763	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136275388776	2025.03.15	"0    D12
+Name: ECO, dtype: object"	jay_fh	omarxbadawi	0-1	01:27:35	01:32:20	omarxbadawi won by resignation	1754	1710	180+2	black	omarxbadawi	1710	1754	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136278788756	2025.03.15	"0    A00
+Name: ECO, dtype: object"	jay_fh	LucasNguyen0403	0-1	04:37:07	04:38:48	LucasNguyen0403 won by resignation	1746	1764	180+2	black	LucasNguyen0403	1764	1746	Similar	Mieses Opening: Reversed Rat
+blitz	https://www.chess.com/game/live/136278821914	2025.03.15	"0    C03
+Name: ECO, dtype: object"	nikerszchess	jay_fh	1-0	04:38:58	04:47:52	nikerszchess won on time	1815	1739	180+2	white	nikerszchess	1815	1739	Stronger	French Defense: Tarrasch Variation, Closed Variation
+blitz	https://www.chess.com/game/live/136279220162	2025.03.15	"0    D10
+Name: ECO, dtype: object"	jay_fh	you-didnt-think-this-thru	1-0	05:01:20	05:07:22	jay_fh won by resignation	1745	1655	180+2	white	jay_fh	1655	1745	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136279911264	2025.03.15	"0    C01
+Name: ECO, dtype: object"	Alkafhamid	jay_fh	0-1	05:40:05	05:46:48	jay_fh won by resignation	1736	1753	180+2	black	jay_fh	1736	1753	Similar	French Defense: Exchange Variation
+blitz	https://www.chess.com/game/live/136280036660	2025.03.15	"0    C02
+Name: ECO, dtype: object"	patrikklapac	jay_fh	0-1	05:46:57	05:53:01	jay_fh won by resignation	1779	1762	180+2	black	jay_fh	1779	1762	Similar	French Defense: Advance Variation
+blitz	https://www.chess.com/game/live/136288931770	2025.03.15	"0    D43
+Name: ECO, dtype: object"	jay_fh	huyenkieuthi	1-0	12:10:37	12:16:15	jay_fh won by resignation	1769	1707	180+2	white	jay_fh	1707	1769	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136289117682	2025.03.15	"0    C02
+Name: ECO, dtype: object"	6112gelo	jay_fh	1-0	12:17:09	12:23:54	6112gelo won by resignation	1671	1759	180+2	white	6112gelo	1671	1759	Stronger	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136289316384	2025.03.15	"0    E61
+Name: ECO, dtype: object"	jay_fh	jonasdecraemer	1-0	12:24:05	12:33:03	jay_fh won by resignation	1765	1677	180+2	white	jay_fh	1677	1765	Stronger	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136289605202	2025.03.15	"0    C00
+Name: ECO, dtype: object"	MOU-SSAO	jay_fh	1-0	12:34:04	12:37:04	MOU-SSAO won by checkmate	1812	1758	180+2	white	MOU-SSAO	1812	1758	Stronger	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136289815172	2025.03.15	"0    D43
+Name: ECO, dtype: object"	jay_fh	GhulamRasool	1-0	12:41:17	12:51:14	jay_fh won by resignation	1766	1736	180+2	white	jay_fh	1736	1766	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136290111942	2025.03.15	"0    D94
+Name: ECO, dtype: object"	jay_fh	lior-korshenbaum	0-1	12:51:19	13:00:32	lior-korshenbaum won on time	1758	1765	180+2	black	lior-korshenbaum	1765	1758	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136316005610	2025.03.16	"0    D37
+Name: ECO, dtype: object"	jay_fh	tobirama6	0-1	05:52:12	05:54:51	tobirama6 won by resignation	1751	1800	180+2	black	tobirama6	1800	1751	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136319936338	2025.03.16	"0    C00
+Name: ECO, dtype: object"	GIRGINIM	jay_fh	0-1	09:03:30	09:11:33	jay_fh won by resignation	1732	1759	180+2	black	jay_fh	1732	1759	Similar	French Defense: Orthoschnapp Gambit
+blitz	https://www.chess.com/game/live/136320126460	2025.03.16	"0    D53
+Name: ECO, dtype: object"	shyamvb	jay_fh	1-0	09:11:38	09:21:00	shyamvb won on time	1758	1751	180+2	white	shyamvb	1758	1751	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136320522018	2025.03.16	"0    D04
+Name: ECO, dtype: object"	jay_fh	yewteohsiang	1-0	09:28:08	09:33:34	jay_fh won by resignation	1757	1652	180+2	white	jay_fh	1652	1757	Weaker	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136323993930	2025.03.16	"0    D35
+Name: ECO, dtype: object"	Hawyto	jay_fh	0-1	11:41:30	11:49:08	jay_fh won on time	1770	1765	180+2	black	jay_fh	1770	1765	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136333899066	2025.03.16	"0    C00
+Name: ECO, dtype: object"	Syed2991	jay_fh	1-0	16:57:02	16:59:34	Syed2991 won by resignation	1724	1756	180+2	white	Syed2991	1724	1756	Similar	French Defense: La Bourdonnais Variation, Reuter Gambit
+blitz	https://www.chess.com/game/live/136407838996	2025.03.18	"0    A30
+Name: ECO, dtype: object"	jay_fh	lornaajlibay	1-0	17:08:09	17:16:48	jay_fh won on time	1764	1763	180+2	white	jay_fh	1763	1764	Similar	Benoni Defense: Benoni Gambit Accepted
+blitz	https://www.chess.com/game/live/136425848702	2025.03.19	"0    D10
+Name: ECO, dtype: object"	jay_fh	sam_3005	0-1	05:13:06	05:20:53	sam_3005 won by resignation	1755	1732	180+2	black	sam_3005	1732	1755	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136435442880	2025.03.19	"0    D53
+Name: ECO, dtype: object"	verce98	jay_fh	1-0	12:14:14	12:18:35	verce98 won by resignation	1769	1747	180+2	white	verce98	1769	1747	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136441260910	2025.03.19	"0    B14
+Name: ECO, dtype: object"	jay_fh	vmogilenko	0-1	15:15:23	15:23:03	vmogilenko won by resignation	1740	1819	180+2	black	vmogilenko	1819	1740	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136444731996	2025.03.19	"0    A45
+Name: ECO, dtype: object"	DecoderBlock	jay_fh	1-0	16:55:46	17:01:18	DecoderBlock won by resignation	1856	1734	180+2	white	DecoderBlock	1856	1734	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136445773714	2025.03.19	"0    D45
+Name: ECO, dtype: object"	jay_fh	Nazmul_786	0-1	17:25:37	17:31:38	Nazmul_786 won by resignation	1726	1733	180+2	black	Nazmul_786	1733	1726	Similar	Queen's Pawn Game
+rapid	https://www.chess.com/game/live/136476180176	2025.03.20	"0    C02
+Name: ECO, dtype: object"	saskuo4a	jay_fh	1-0	14:14:28	14:28:12	saskuo4a won by resignation	1722	1674	600	white	saskuo4a	1722	1674	Similar	French Defense: Advance Variation, Steinitz Variation
+rapid	https://www.chess.com/game/live/136505726612	2025.03.21	"0    A13
+Name: ECO, dtype: object"	AzadOmer	jay_fh	1-0	10:13:14	10:25:53	AzadOmer won - game abandoned	1715	1657	600	white	AzadOmer	1715	1657	Stronger	English Opening: Agincourt Defense
+rapid	https://www.chess.com/game/live/136516820246	2025.03.21	"0    D38
+Name: ECO, dtype: object"	jay_fh	shivasmaran19	1-0	16:14:52	16:30:03	jay_fh won by resignation	1674	1648	600	white	jay_fh	1648	1674	Similar	Benoni Defense: Hawk Variation
+rapid	https://www.chess.com/game/live/136517383580	2025.03.21	"0    D00
+Name: ECO, dtype: object"	naif111qq	jay_fh	1-0	16:31:25	16:34:26	naif111qq won by resignation	1689	1658	600	white	naif111qq	1689	1658	Similar	Benoni Defense: Franco-Sicilian Hybrid
+rapid	https://www.chess.com/game/live/136519372500	2025.03.21	"0    D00
+Name: ECO, dtype: object"	jay_fh	micho2020	1-0	17:29:14	17:34:02	jay_fh won by resignation	1672	1616	600	white	jay_fh	1616	1672	Stronger	Queen's Pawn Game
+rapid	https://www.chess.com/game/live/136519537624	2025.03.21	"0    C01
+Name: ECO, dtype: object"	olegmerkurev	jay_fh	0-1	17:34:08	17:37:59	jay_fh won by resignation	1657	1687	600	black	jay_fh	1657	1687	Similar	Rat Defense: Small Center Defense
+rapid	https://www.chess.com/game/live/136519669990	2025.03.21	"0    A41
+Name: ECO, dtype: object"	jay_fh	lpasqual	1-0	17:38:03	17:42:17	jay_fh won by resignation	1702	1678	600	white	jay_fh	1678	1702	Similar	Colle System: Pterodactyl Variation
+rapid	https://www.chess.com/game/live/136519819206	2025.03.21	"0    A45
+Name: ECO, dtype: object"	jay_fh	blackhena	0-1	17:42:28	17:49:12	blackhena won by resignation	1688	1698	600	black	blackhena	1698	1688	Similar	Benoni Defense: Hawk Variation
+rapid	https://www.chess.com/game/live/136533064700	2025.03.22	"0    D07
+Name: ECO, dtype: object"	jay_fh	kevinbastos	0-1	02:28:49	02:33:14	kevinbastos won by resignation	1675	1698	600	black	kevinbastos	1698	1675	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136546554128	2025.03.22	"0    C11
+Name: ECO, dtype: object"	Conboop	jay_fh	1-0	12:52:16	13:00:00	Conboop won by resignation	1757	1719	180+2	white	Conboop	1757	1719	Similar	French Defense: Steinitz Variation
+rapid	https://www.chess.com/game/live/136576980932	2025.03.23	"0    C01
+Name: ECO, dtype: object"	killerseven0	jay_fh	1-0	09:34:53	09:38:11	killerseven0 won by resignation	1666	1661	600	white	killerseven0	1666	1661	Similar	French Defense: Two Knights Variation
+rapid	https://www.chess.com/game/live/136577746576	2025.03.23	"0    E00
+Name: ECO, dtype: object"	laj7	jay_fh	0-1	10:05:57	10:18:49	jay_fh won by resignation	1629	1673	600	black	jay_fh	1629	1673	Similar	Benoni Defense: Franco-Sicilian Hybrid
+rapid	https://www.chess.com/game/live/136578069964	2025.03.23	"0    D40
+Name: ECO, dtype: object"	jay_fh	djukiczoran	1-0	10:18:54	10:24:10	jay_fh won by resignation	1686	1687	600	white	jay_fh	1687	1686	Similar	Benoni Defense: Hawk Variation
+rapid	https://www.chess.com/game/live/136578204254	2025.03.23	"0    D45
+Name: ECO, dtype: object"	jay_fh	Luisv254	1-0	10:24:15	10:35:04	jay_fh won by checkmate	1699	1716	600	white	jay_fh	1716	1699	Similar	Queen's Pawn Game
+rapid	https://www.chess.com/game/live/136580020320	2025.03.23	"0    A02
+Name: ECO, dtype: object"	pandaboy168	jay_fh	0-1	11:33:45	11:46:08	jay_fh won by resignation	1715	1711	600	black	jay_fh	1715	1711	Similar	Bird Opening
+blitz	https://www.chess.com/game/live/136580736502	2025.03.23	"0    C02
+Name: ECO, dtype: object"	SamuelGatunito	jay_fh	0-1	12:00:10	12:01:41	jay_fh won by resignation	1705	1727	180+2	black	jay_fh	1705	1727	Similar	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136580847414	2025.03.23	"0    E40
+Name: ECO, dtype: object"	jay_fh	Dalex1	0-1	12:04:07	12:10:14	Dalex1 won on time	1719	1733	180+2	black	Dalex1	1733	1719	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136581235996	2025.03.23	"0    D38
+Name: ECO, dtype: object"	jay_fh	granmorgan	0-1	12:17:55	12:23:08	granmorgan won by resignation	1712	1780	180+2	black	granmorgan	1780	1712	Stronger	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136587958830	2025.03.23	"0    D12
+Name: ECO, dtype: object"	jay_fh	The_best_sunshine	0-1	15:53:07	16:01:44	The_best_sunshine won on time	1704	1729	180+2	black	The_best_sunshine	1729	1704	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136607899584	2025.03.24	"0    C10
+Name: ECO, dtype: object"	Rus-Ivan-Moscow	jay_fh	1-0	05:29:18	05:35:24	Rus-Ivan-Moscow won by resignation	1774	1697	180+2	white	Rus-Ivan-Moscow	1774	1697	Stronger	French Defense: Exchange Variation, Svenonius Variation
+blitz	https://www.chess.com/game/live/136624307964	2025.03.24	"0    D30
+Name: ECO, dtype: object"	oooRomeo	jay_fh	1-0	16:05:21	16:14:08	oooRomeo won on time	1703	1689	180+2	white	oooRomeo	1703	1689	Similar	English Opening: Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense
+blitz	https://www.chess.com/game/live/136643707104	2025.03.25	"0    D10
+Name: ECO, dtype: object"	jay_fh	danielmisrael	0-1	04:22:49	04:30:21	danielmisrael won on time	1682	1748	180+2	black	danielmisrael	1748	1682	Stronger	Queen's Pawn Game: Anglo-Slav Opening
+blitz	https://www.chess.com/game/live/136644243092	2025.03.25	"0    E14
+Name: ECO, dtype: object"	jay_fh	TomhoZ	1-0	04:54:06	05:01:20	jay_fh won by resignation	1689	1643	180+2	white	jay_fh	1643	1689	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136644368464	2025.03.25	"0    A45
+Name: ECO, dtype: object"	LCD-Channel	jay_fh	1-0	05:01:25	05:02:18	LCD-Channel won by resignation	1786	1683	180+2	white	LCD-Channel	1786	1683	Stronger	Saragossa Opening
+blitz	https://www.chess.com/game/live/136644417758	2025.03.25	"0    D00
+Name: ECO, dtype: object"	ilung28	jay_fh	0-1	05:04:18	05:06:56	jay_fh won by checkmate	1638	1690	180+2	black	jay_fh	1638	1690	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136644464574	2025.03.25	"0    C01
+Name: ECO, dtype: object"	ivanmuts	jay_fh	0-1	05:07:01	05:14:24	jay_fh won on time	1556	1695	180+2	black	jay_fh	1556	1695	Weaker	French Defense: Exchange Variation
+blitz	https://www.chess.com/game/live/136644850784	2025.03.25	"0    D37
+Name: ECO, dtype: object"	jay_fh	dumbzu	1-0	05:29:22	05:36:07	jay_fh won by resignation	1701	1601	180+2	white	jay_fh	1601	1701	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136650645606	2025.03.25	"0    D02
+Name: ECO, dtype: object"	jay_fh	Guliver_5522	0-1	10:10:11	10:15:24	Guliver_5522 won by resignation	1694	1731	180+2	black	Guliver_5522	1731	1694	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136655548488	2025.03.25	"0    C01
+Name: ECO, dtype: object"	Zmywarka999	jay_fh	1-0	13:06:42	13:13:50	Zmywarka999 won on time	1709	1686	180+2	white	Zmywarka999	1709	1686	Similar	French Defense: Exchange Variation
+blitz	https://www.chess.com/game/live/136663043580	2025.03.25	"0    D30
+Name: ECO, dtype: object"	ElTalisman241	jay_fh	0-1	16:53:40	16:56:08	jay_fh won by resignation	1685	1694	180+2	black	jay_fh	1685	1694	Similar	English Opening: Agincourt Defense
+blitz	https://www.chess.com/game/live/136663133600	2025.03.25	"0    D45
+Name: ECO, dtype: object"	jay_fh	far2260	1-0	16:56:14	17:04:06	jay_fh won by resignation	1702	1695	180+2	white	jay_fh	1695	1702	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136663409238	2025.03.25	"0    A02
+Name: ECO, dtype: object"	Dave1771	jay_fh	0-1	17:04:13	17:13:10	jay_fh won by checkmate	1696	1710	180+2	black	jay_fh	1696	1710	Similar	Bird Opening
+blitz	https://www.chess.com/game/live/136663722698	2025.03.25	"0    D35
+Name: ECO, dtype: object"	Magnus_Carltson	jay_fh	0-1	17:13:21	17:21:20	jay_fh won by resignation	1724	1719	180+2	black	jay_fh	1724	1719	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136664185428	2025.03.25	"0    D04
+Name: ECO, dtype: object"	jay_fh	JIpolito	0-1	17:26:46	17:29:47	JIpolito won by resignation	1710	1704	180+2	black	JIpolito	1704	1710	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136684108882	2025.03.26	"0    E43
+Name: ECO, dtype: object"	jay_fh	miamaying	0-1	07:36:04	07:37:38	miamaying won by resignation	1702	1731	180+2	black	miamaying	1731	1702	Similar	English Defense
+blitz	https://www.chess.com/game/live/136684141804	2025.03.26	"0    D43
+Name: ECO, dtype: object"	jay_fh	a2-a1	0-1	07:37:42	07:44:47	a2-a1 won by resignation	1695	1758	180+2	black	a2-a1	1758	1695	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136684348586	2025.03.26	"0    A17
+Name: ECO, dtype: object"	rodecab	jay_fh	1-0	07:47:48	07:50:13	rodecab won by resignation	1664	1686	180+2	white	rodecab	1664	1686	Similar	English Opening: Anglo-Indian Defense, Queen's Indian Formation
+blitz	https://www.chess.com/game/live/136684890272	2025.03.26	"0    D02
+Name: ECO, dtype: object"	jay_fh	boriskogoj7	1-0	08:13:49	08:19:41	jay_fh won by resignation	1691	1564	180+2	white	jay_fh	1564	1691	Weaker	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136691359830	2025.03.26	"0    C02
+Name: ECO, dtype: object"	DefinitelyNotIleisd	jay_fh	1-0	12:30:04	12:35:40	DefinitelyNotIleisd won by resignation	1582	1680	180+2	white	DefinitelyNotIleisd	1582	1680	Stronger	Rat Defense: Small Center Defense
+blitz	https://www.chess.com/game/live/136702262142	2025.03.26	"0    D38
+Name: ECO, dtype: object"	jay_fh	S_Gan	0-1	17:59:20	18:06:03	S_Gan won by resignation	1672	1708	180+2	black	S_Gan	1708	1672	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136716602972	2025.03.27	"0    C00
+Name: ECO, dtype: object"	Connor0609	jay_fh	1-0	03:36:20	03:42:31	Connor0609 won on time	1702	1665	180+2	white	Connor0609	1702	1665	Similar	French Defense: Horwitz Attack, Papa-Ticulat Gambit
+blitz	https://www.chess.com/game/live/136718257698	2025.03.27	"0    C01
+Name: ECO, dtype: object"	M_Larsom	jay_fh	0-1	05:12:47	05:15:51	jay_fh won by resignation	1557	1671	180+2	black	jay_fh	1557	1671	Weaker	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136729775520	2025.03.27	"0    C21
+Name: ECO, dtype: object"	jay_fh	destachannel	1-0	13:23:36	13:32:28	jay_fh won by resignation	1677	1586	180+2	white	jay_fh	1586	1677	Stronger	Englund Gambit
+blitz	https://www.chess.com/game/live/136732516998	2025.03.27	"0    D37
+Name: ECO, dtype: object"	jay_fh	jamar08	1-0	14:49:44	14:57:02	jay_fh won on time	1685	1681	180+2	white	jay_fh	1681	1685	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136732761864	2025.03.27	"0    C01
+Name: ECO, dtype: object"	lvhgcl	jay_fh	0-1	14:57:07	15:01:26	jay_fh won by resignation	1676	1693	180+2	black	jay_fh	1676	1693	Similar	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136732905886	2025.03.27	"0    C01
+Name: ECO, dtype: object"	RamM97	jay_fh	1-0	15:01:31	15:09:54	RamM97 won on time	1710	1685	180+2	white	RamM97	1710	1685	Similar	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136750434746	2025.03.28	"0    C02
+Name: ECO, dtype: object"	vinhngwe	jay_fh	0-1	01:06:32	01:08:35	jay_fh won by resignation	1595	1691	180+2	black	jay_fh	1595	1691	Stronger	French Defense: Advance Variation, Lputian Variation
+blitz	https://www.chess.com/game/live/136750474240	2025.03.28	"0    D94
+Name: ECO, dtype: object"	jay_fh	dlapetina	0-1	01:08:40	01:15:30	dlapetina won by resignation	1683	1682	180+2	black	dlapetina	1682	1683	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136755733998	2025.03.28	"0    D30
+Name: ECO, dtype: object"	jay_fh	Asa0000	0-1	06:05:02	06:09:55	Asa0000 won by resignation	1675	1702	180+2	black	Asa0000	1702	1675	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136756350058	2025.03.28	"0    A40
+Name: ECO, dtype: object"	jay_fh	checky3333	1-0	06:37:28	06:44:46	jay_fh won on time	1684	1694	180+2	white	jay_fh	1694	1684	Similar	Colle System: Pterodactyl Variation
+blitz	https://www.chess.com/game/live/136771443642	2025.03.28	"0    B28
+Name: ECO, dtype: object"	337romanmu	jay_fh	0-1	16:00:28	16:02:13	jay_fh won - game abandoned	1630	1691	180+2	black	jay_fh	1630	1691	Stronger	French Defense: Advance Variation, Euwe Variation
+blitz	https://www.chess.com/game/live/136771505310	2025.03.28	"0    E14
+Name: ECO, dtype: object"	jay_fh	Dikranovich	1-0	16:02:20	16:03:45	jay_fh won by resignation	1698	1645	180+2	white	jay_fh	1645	1698	Stronger	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136771556446	2025.03.28	"0    C02
+Name: ECO, dtype: object"	rowano	jay_fh	0-1	16:03:52	16:10:11	jay_fh won by resignation	1613	1704	180+2	black	jay_fh	1613	1704	Stronger	French Defense: Advance Variation, Ruisdonk Gambit
+blitz	https://www.chess.com/game/live/136771770304	2025.03.28	"0    A40
+Name: ECO, dtype: object"	jay_fh	pankajthanki	0-1	16:10:19	16:11:18	pankajthanki won by resignation	1696	1729	180+2	black	pankajthanki	1729	1696	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136793263678	2025.03.29	"0    D35
+Name: ECO, dtype: object"	Helena_Janekzek	jay_fh	0-1	07:18:44	07:26:07	jay_fh won on time	1694	1704	180+2	black	jay_fh	1694	1704	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136795280556	2025.03.29	"0    D45
+Name: ECO, dtype: object"	jay_fh	Darumar	1-0	08:54:23	09:02:02	jay_fh won on time	1712	1681	180+2	white	jay_fh	1681	1712	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136795867048	2025.03.29	"0    D94
+Name: ECO, dtype: object"	jay_fh	MuKulKarni	0-1	09:20:13	09:27:22	MuKulKarni won by resignation	1703	1680	180+2	black	MuKulKarni	1680	1703	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136802857198	2025.03.29	"0    D11
+Name: ECO, dtype: object"	jay_fh	JuegoMejorQueVos	0-1	13:42:33	13:47:08	JuegoMejorQueVos won by resignation	1695	1712	180+2	black	JuegoMejorQueVos	1712	1695	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136803860280	2025.03.29	"0    C01
+Name: ECO, dtype: object"	SHWijsneus	jay_fh	1-0	14:15:26	14:20:44	SHWijsneus won by resignation	1651	1686	180+2	white	SHWijsneus	1651	1686	Similar	Rat Defense: Small Center Defense
+blitz	https://www.chess.com/game/live/136836700210	2025.03.30	"0    C11
+Name: ECO, dtype: object"	Monodromy	jay_fh	0-1	12:51:58	12:54:31	jay_fh won by resignation	1633	1693	180+2	black	jay_fh	1633	1693	Stronger	French Defense: MacCutcheon Variation, Duras Variation
+blitz	https://www.chess.com/game/live/136836777460	2025.03.30	"0    C01
+Name: ECO, dtype: object"	weiwei123x	jay_fh	1-0	12:54:39	12:59:34	weiwei123x won by resignation	1759	1686	180+2	white	weiwei123x	1759	1686	Stronger	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136843536146	2025.03.30	"0    D37
+Name: ECO, dtype: object"	jay_fh	Cosmic_Lumeon	1-0	16:30:44	16:36:56	jay_fh won on time	1694	1681	180+2	white	jay_fh	1681	1694	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136862632570	2025.03.31	"0    D07
+Name: ECO, dtype: object"	jay_fh	jamesrichard30	1-0	06:09:29	06:11:14	jay_fh won by resignation	1699	1555	180+2	white	jay_fh	1555	1699	Weaker	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136862670320	2025.03.31	"0    A08
+Name: ECO, dtype: object"	Aaichamulga	jay_fh	0-1	06:11:24	06:19:31	jay_fh won by resignation	1667	1706	180+2	black	jay_fh	1667	1706	Similar	Zukertort Opening: Queen's Gambit Invitation
+blitz	https://www.chess.com/game/live/136862832082	2025.03.31	"0    C01
+Name: ECO, dtype: object"	preethammessi	jay_fh	0-1	06:19:39	06:22:53	jay_fh won by resignation	1623	1712	180+2	black	jay_fh	1623	1712	Stronger	French Defense: Exchange Variation
+blitz	https://www.chess.com/game/live/136863159232	2025.03.31	"0    D10
+Name: ECO, dtype: object"	jay_fh	erhta	1/2-1/2	06:36:04	06:44:50	Game drawn by repetition	1711	1668	180+2	draw	draw	1668	1711	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136865415960	2025.03.31	"0    C11
+Name: ECO, dtype: object"	zenith-john	jay_fh	0-1	08:23:16	08:32:45	jay_fh won on time	1701	1719	180+2	black	jay_fh	1701	1719	Similar	French Defense: MacCutcheon Variation, Duras Variation
+blitz	https://www.chess.com/game/live/136865631086	2025.03.31	"0    A41
+Name: ECO, dtype: object"	jay_fh	igood2	0-1	08:32:52	08:36:13	igood2 won by resignation	1710	1668	180+2	black	igood2	1668	1710	Similar	Colle System: Pterodactyl Variation
+blitz	https://www.chess.com/game/live/136865794396	2025.03.31	"0    A34
+Name: ECO, dtype: object"	jay_fh	salehi25	0-1	08:40:05	08:43:21	salehi25 won by resignation	1702	1713	180+2	black	salehi25	1713	1702	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136865941178	2025.03.31	"0    D63
+Name: ECO, dtype: object"	Rosiaczek	jay_fh	1-0	08:46:30	08:54:30	Rosiaczek won on time	1711	1694	180+2	white	Rosiaczek	1711	1694	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136866532234	2025.03.31	"0    D30
+Name: ECO, dtype: object"	kingofdisasters	jay_fh	0-1	09:12:00	09:18:11	jay_fh won by resignation	1679	1702	180+2	black	jay_fh	1679	1702	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136866681930	2025.03.31	"0    A46
+Name: ECO, dtype: object"	jay_fh	B88888888	1-0	09:18:19	09:24:33	jay_fh won by resignation	1710	1710	180+2	white	jay_fh	1710	1710	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136866834352	2025.03.31	"0    D35
+Name: ECO, dtype: object"	glb74	jay_fh	1-0	09:24:43	09:27:04	glb74 won - game abandoned	1613	1700	180+2	white	glb74	1613	1700	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136867079298	2025.03.31	"0    D35
+Name: ECO, dtype: object"	ItHearts	jay_fh	1/2-1/2	09:34:57	09:42:44	Game drawn by agreement	1714	1700	180+2	draw	draw	1714	1700	Similar	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136867270772	2025.03.31	"0    E61
+Name: ECO, dtype: object"	jay_fh	celop21472	1-0	09:42:50	09:53:10	jay_fh won by resignation	1707	1663	180+2	white	jay_fh	1663	1707	Similar	Benoni Defense: Hawk Variation
+blitz	https://www.chess.com/game/live/136867526300	2025.03.31	"0    C00
+Name: ECO, dtype: object"	edgardtambunan	jay_fh	1-0	09:53:17	09:57:52	edgardtambunan won by resignation	1669	1698	180+2	white	edgardtambunan	1669	1698	Similar	French Defense: Two Knights Variation
+blitz	https://www.chess.com/game/live/136868050068	2025.03.31	"0    D45
+Name: ECO, dtype: object"	jay_fh	UesleiMP	1/2-1/2	10:14:32	10:24:32	Game drawn by repetition	1698	1717	180+2	draw	draw	1717	1698	Similar	Queen's Pawn Game
+blitz	https://www.chess.com/game/live/136869240284	2025.03.31	"0    A40
+Name: ECO, dtype: object"	jay_fh	otenzki	0-1	11:00:04	11:06:03	otenzki won by resignation	1690	1710	180+2	black	otenzki	1710	1690	Similar	Englund Gambit Declined: Reversed French
+blitz	https://www.chess.com/game/live/136869764540	2025.03.31	"0    D31
+Name: ECO, dtype: object"	jay_fh	rogerpogi0103	1-0	11:19:27	11:26:46	jay_fh won on time	1697	1623	180+2	white	jay_fh	1623	1697	Stronger	Benoni Defense: Franco-Sicilian Hybrid
+blitz	https://www.chess.com/game/live/136877385966	2025.03.31	"0    C01
+Name: ECO, dtype: object"	Elnegro25	jay_fh	1-0	15:26:52	15:33:57	Elnegro25 won on time	1699	1689	180+2	white	Elnegro25	1699	1689	Similar	French Defense: Two Knights Variation

@@ -1,4 +1,12 @@
 .envrc
 .direnv/
 .mypy_cache/
+.streamlit/secrets.toml
+others.txt
+.others.txt
 .streamlit/*
+.env
+.venv
+# Ignore virtual environment
+venv/
+.venv/
